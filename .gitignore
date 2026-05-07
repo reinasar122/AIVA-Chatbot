@@ -1,0 +1,17 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Training outputs
+results/
+checkpoint-*/
+model/
+intent_model/
+
+# VS Code
+.vscode/
