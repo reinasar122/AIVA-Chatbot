@@ -96,7 +96,7 @@
   {"text": "How does hacking work?", "intent": "out_of_scope"},
   {"text": "What is machine learning", "intent": "out_of_scope"},
 
-   {"text": "Do you have water?", "intent": "business_info"},
+  {"text": "Do you have water?", "intent": "business_info"},
   {"text": "Do you sell Coke?", "intent": "business_info"},
   {"text": "What products do you have?", "intent": "business_info"},
   {"text": "Do you have snacks?", "intent": "business_info"},

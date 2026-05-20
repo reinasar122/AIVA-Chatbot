@@ -1,17 +1,17 @@
 [
-  {"tokens": ["Order", "Coke", "2", "bottles"], "ner_tags": ["O", "B-PRODUCT", "B-QUANTITY", "O"]},
-  {"tokens": ["Order", "Sprite", "3", "pcs"], "ner_tags": ["O", "B-PRODUCT", "B-QUANTITY", "O"]},
+  {"tokens": ["Order", "Coke", "2", "bottles"], "ner_tags": ["B-ACTION", "B-PRODUCT", "B-QUANTITY", "O"]},
+  {"tokens": ["Order", "Sprite", "3", "pcs"], "ner_tags": ["B-ACTION", "B-PRODUCT", "B-QUANTITY", "O"]},
   {"tokens": ["I", "want", "1", "Coke", "please"], "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT", "O"]},
 
-  {"tokens": ["Pa-order", "2", "Coke", "boss"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "O"]},
+  {"tokens": ["Pa-order", "2", "Coke", "boss"], "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "O"]},
   {"tokens": ["Gusto", "ko", "3", "Royal", "pls"], "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT", "O"]},
 
-  {"tokens": ["Mag", "order", "ug", "2", "Coke"], "ner_tags": ["O", "O", "O", "B-QUANTITY", "B-PRODUCT"]},
-  {"tokens": ["Palit", "ko", "Sprite", "1"], "ner_tags": ["O", "O", "B-PRODUCT", "B-QUANTITY"]},
+  {"tokens": ["Mag", "order", "ug", "2", "Coke"], "ner_tags": ["O", "B-ACTION", "O", "B-QUANTITY", "B-PRODUCT"]},
+  {"tokens": ["Palit", "ko", "Sprite", "1"], "ner_tags": ["B-ACTION", "O", "B-PRODUCT", "B-QUANTITY"]},
 
   {"tokens": ["Pwede", "1", "Coke", "and", "1", "Sprite"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "O", "B-QUANTITY", "B-PRODUCT"]},
 
-  {"tokens": ["Order", "Coke", "via", "GCash"], "ner_tags": ["O", "B-PRODUCT", "O", "B-PAYMENT"]},
+  {"tokens": ["Order", "Coke", "via", "GCash"], "ner_tags": ["B-ACTION", "B-PRODUCT", "O", "B-PAYMENT"]},
   {"tokens": ["Pay", "cash", "for", "Sprite"], "ner_tags": ["O", "B-PAYMENT", "O", "B-PRODUCT"]},
 
   {"tokens": ["Coke", "2", "Royal", "1"], "ner_tags": ["B-PRODUCT", "B-QUANTITY", "B-PRODUCT", "B-QUANTITY"]},
@@ -19,11 +19,11 @@
   {"tokens": ["I", "need", "Coke", "and", "Sprite"], "ner_tags": ["O", "O", "B-PRODUCT", "O", "B-PRODUCT"]},
 
   {"tokens": ["GCash", "payment", "for", "Coke"], "ner_tags": ["B-PAYMENT", "O", "O", "B-PRODUCT"]},
-  {"tokens": ["Cash", "only", "order", "Sprite"], "ner_tags": ["B-PAYMENT", "O", "O", "B-PRODUCT"]},
+  {"tokens": ["Cash", "only", "order", "Sprite"], "ner_tags": ["B-PAYMENT", "O", "B-ACTION", "B-PRODUCT"]},
 
-  {"tokens": ["Order", "2", "Coke", "1", "Royal", "GCash"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT"]},
+  {"tokens": ["Order", "2", "Coke", "1", "Royal", "GCash"], "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT"]},
 
-  {"tokens": ["Pa-deliver", "3", "Coke", "cash"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT"]},
+  {"tokens": ["Pa-deliver", "3", "Coke", "cash"], "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT"]},
 
   {"tokens": ["Sprite", "lang"], "ner_tags": ["B-PRODUCT", "O"]},
   {"tokens": ["Coke", "lang", "1"], "ner_tags": ["B-PRODUCT", "O", "B-QUANTITY"]},
@@ -48,61 +48,61 @@
   {"tokens": ["koke", "pls"], "ner_tags": ["B-PRODUCT", "O"]},
   {"tokens": ["cokee", "2"], "ner_tags": ["B-PRODUCT", "B-QUANTITY"]},
 
-  {"tokens": ["Order", "Coke", "Cebu"], "ner_tags": ["O", "B-PRODUCT", "B-LOCATION"]},
-  {"tokens": ["Deliver", "Sprite", "Cebu"], "ner_tags": ["O", "B-PRODUCT", "B-LOCATION"]},
-  {"tokens": ["Deliver", "Sprite", "here"], "ner_tags": ["O", "B-PRODUCT", "O"]},
+  {"tokens": ["Order", "Coke", "Cebu"], "ner_tags": ["B-ACTION", "B-PRODUCT", "B-LOCATION"]},
+  {"tokens": ["Deliver", "Sprite", "Cebu"], "ner_tags": ["B-ACTION", "B-PRODUCT", "B-LOCATION"]},
+  {"tokens": ["Deliver", "Sprite", "here"], "ner_tags": ["B-ACTION", "B-PRODUCT", "O"]},
 
   {"tokens": ["Pay", "via", "cash"], "ner_tags": ["O", "O", "B-PAYMENT"]},
   {"tokens": ["Pay", "via", "GCash"], "ner_tags": ["O", "O", "B-PAYMENT"]},
 
   {"tokens": ["I", "want", "Coke", "3", "GCash"], "ner_tags": ["O", "O", "B-PRODUCT", "B-QUANTITY", "B-PAYMENT"]},
 
-  {"tokens": ["Order", "3", "Coke", "please"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "O"]},
-  {"tokens": ["Order", "1", "Sprite", "cash"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT"]},
+  {"tokens": ["Order", "3", "Coke", "please"], "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "O"]},
+  {"tokens": ["Order", "1", "Sprite", "cash"], "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT"]},
 
-  {"tokens": ["Hatagi", "kog", "2", "Coke"], "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT"]},
-  {"tokens": ["Palihog", "3", "Sprite"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT"]},
+  {"tokens": ["Hatagi", "kog", "2", "Coke"], "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "B-PRODUCT"]},
+  {"tokens": ["Palihog", "3", "Sprite"], "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT"]},
   {"tokens": ["Need", "2", "Royal", "ASAP"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "O"]},
 
-  {"tokens": ["Deliver", "to", "Block", "3", "Lot", "5"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]},
-  {"tokens": ["Deliver", "sa", "Block", "10", "Lot", "1"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "to", "Block", "3", "Lot", "5"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "sa", "Block", "10", "Lot", "1"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]},
 
   {"tokens": ["Sa", "Lahug", "Cebu"], "ner_tags": ["O", "B-LOCATION", "I-LOCATION"]},
-  {"tokens": ["Deliver", "sa", "Ayala", "Center"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "sa", "Ayala", "Center"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
 
-  {"tokens": ["Padala", "sa", "IT", "Park"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
-  {"tokens": ["Deliver", "to", "SM", "Seaside"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Padala", "sa", "IT", "Park"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "to", "SM", "Seaside"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
 
   {"tokens": ["Sa", "Banilad"], "ner_tags": ["O", "B-LOCATION"]},
   {"tokens": ["Sa", "Mabolo", "lang"], "ner_tags": ["O", "B-LOCATION", "O"]},
 
-  {"tokens": ["Deliver", "to", "123", "Main", "Street"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]},
-  {"tokens": ["Deliver", "sa", "45", "Osmena", "Blvd"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "to", "123", "Main", "Street"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "sa", "45", "Osmena", "Blvd"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]},
 
   {"tokens": ["Sa", "Purok", "5", "Lahug"], "ner_tags": ["O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]},
-  {"tokens": ["Deliver", "sa", "Sitio", "Uno"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "sa", "Sitio", "Uno"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
 
-  {"tokens": ["Padala", "sa", "Barangay", "Apas"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Padala", "sa", "Barangay", "Apas"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
   {"tokens": ["Sa", "Brgy", "Talamban"], "ner_tags": ["O", "B-LOCATION", "I-LOCATION"]},
 
-  {"tokens": ["Deliver", "to", "Unit", "5", "Tower", "1"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "to", "Unit", "5", "Tower", "1"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]},
   {"tokens": ["Sa", "Room", "12", "Dorm"], "ner_tags": ["O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]},
 
-  {"tokens": ["Deliver", "sa", "Cebu", "City"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "sa", "Cebu", "City"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
   {"tokens": ["Sa", "Mandaue", "City"], "ner_tags": ["O", "B-LOCATION", "I-LOCATION"]},
 
   {"tokens": ["Here", "sa", "Colon", "Street"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
-  {"tokens": ["Deliver", "sa", "Jones", "Avenue"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "sa", "Jones", "Avenue"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
 
   {"tokens": ["Sa", "Parkmall"], "ner_tags": ["O", "B-LOCATION"]},
-  {"tokens": ["Deliver", "to", "Gaisano", "Mall"], "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION"]},
+  {"tokens": ["Deliver", "to", "Gaisano", "Mall"], "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION"]},
 
   {"tokens": ["just", "Coke"], "ner_tags": ["O", "B-PRODUCT"]},
   {"tokens": ["only", "1", "Royal"], "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT"]},
 
   {"tokens": ["2", "Coke", "and", "1", "Sprite"], "ner_tags": ["B-QUANTITY", "B-PRODUCT", "O", "B-QUANTITY", "B-PRODUCT"]},
 
-  {"tokens": ["Order", "pls", "2", "Coke"], "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT"]},
+  {"tokens": ["Order", "pls", "2", "Coke"], "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "B-PRODUCT"]},
 
   {"tokens": ["GCash", "or", "cash"], "ner_tags": ["B-PAYMENT", "O", "B-PAYMENT"]},
 
@@ -111,10 +111,10 @@
   {"tokens": ["Sprite", "via", "GCash"], "ner_tags": ["B-PRODUCT", "O", "B-PAYMENT"]},
   {"tokens": ["Royal", "cash", "1"], "ner_tags": ["B-PRODUCT", "B-PAYMENT", "B-QUANTITY"]},
 
-  {"tokens": ["Deliver", "sa", "Poblacion"], "ner_tags": ["O", "O", "B-LOCATION"]},
-  {"tokens": ["Deliver", "to", "Cebu"], "ner_tags": ["O", "O", "B-LOCATION"]},
-  {"tokens": ["Padala", "sa", "Lahug"], "ner_tags": ["O", "O", "B-LOCATION"]},
-  {"tokens": ["Ship", "to", "Ayala"], "ner_tags": ["O", "O", "B-LOCATION"]},
+  {"tokens": ["Deliver", "sa", "Poblacion"], "ner_tags": ["B-ACTION", "O", "B-LOCATION"]},
+  {"tokens": ["Deliver", "to", "Cebu"], "ner_tags": ["B-ACTION", "O", "B-LOCATION"]},
+  {"tokens": ["Padala", "sa", "Lahug"], "ner_tags": ["B-ACTION", "O", "B-LOCATION"]},
+  {"tokens": ["Ship", "to", "Ayala"], "ner_tags": ["B-ACTION", "O", "B-LOCATION"]},
 
   {"tokens": ["My", "number", "is", "09123456789"], "ner_tags": ["O", "O", "O", "B-PHONE"]},
   {"tokens": ["Contact", "number", "09987654321"], "ner_tags": ["O", "O", "B-PHONE"]},
@@ -131,7 +131,7 @@
   },
   {
     "tokens": ["Palit", "ko", "C2", "Apple"],
-    "ner_tags": ["O", "O", "B-PRODUCT", "I-PRODUCT"]
+    "ner_tags": ["B-ACTION", "O", "B-PRODUCT", "I-PRODUCT"]
   },
   {
     "tokens": ["Magbayad", "ko", "sa", "C2", "Apple"],
@@ -144,6 +144,114 @@
   {
     "tokens": ["2", "ka", "C2", "Apple"],
     "ner_tags": ["B-QUANTITY", "I-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["COD", "lang", "for", "2", "Coke"],
+    "ner_tags": ["B-PAYMENT", "O", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Cash", "on", "delivery", "lang", "for", "Pepsi"],
+    "ner_tags": ["B-PAYMENT", "I-PAYMENT", "I-PAYMENT", "O", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Number", "nako", "09", "18", "555", "1234"],
+    "ner_tags": ["O", "O", "B-PHONE", "I-PHONE", "I-PHONE", "I-PHONE"]
+  },
+  {
+    "tokens": ["Pwede", "ko", "tawagan", "sa", "09", "19", "888", "0000"],
+    "ner_tags": ["O", "O", "O", "O", "B-PHONE", "I-PHONE", "I-PHONE", "I-PHONE"]
+  },
+  {
+    "tokens": ["c0ke", "zero", "duha", "ka", "bottle"],
+    "ner_tags": ["B-PRODUCT", "I-PRODUCT", "B-QUANTITY", "I-QUANTITY", "O"]
+  },
+  {
+    "tokens": ["sprte", "3", "cash", "please"],
+    "ner_tags": ["B-PRODUCT", "B-QUANTITY", "B-PAYMENT", "O"]
+  },
+  {
+    "tokens": ["pepsi", "pls", "deliver", "Cebu", "City"],
+    "ner_tags": ["B-PRODUCT", "O", "B-ACTION", "B-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Palit", "ko", "duha", "ka", "Pepsi"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "I-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Palit", "ko", "tulo", "ka", "Coke", "Zero"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "I-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["Sa", "Gaisano", "Mall", "pickup", "lang"],
+    "ner_tags": ["O", "B-LOCATION", "I-LOCATION", "O", "O"]
+  },
+  {
+    "tokens": ["Pickup", "lang", "ko", "sa", "Parkmall"],
+    "ner_tags": ["O", "O", "O", "O", "B-LOCATION"]
+  },
+  {
+    "tokens": ["Kuhaon", "nako", "sa", "Ayala", "Center"],
+    "ner_tags": ["O", "O", "O", "B-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Palihog", "deliver", "2", "Coke", "sa", "Mabolo"],
+    "ner_tags": ["O", "B-ACTION", "B-QUANTITY", "B-PRODUCT", "O", "B-LOCATION"]
+  },
+  {
+    "tokens": ["Please", "add", "3", "Sprite", "to", "my", "order"],
+    "ner_tags": ["O", "B-ACTION", "B-QUANTITY", "B-PRODUCT", "O", "O", "O"]
+  },
+  {
+    "tokens": ["Update", "my", "order", "to", "1", "Pepsi"],
+    "ner_tags": ["B-ACTION", "O", "O", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Cancel", "my", "Royal", "order"],
+    "ner_tags": ["B-ACTION", "O", "B-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Make", "it", "2", "Royal", "Orange", "instead"],
+    "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Diri", "sa", "Purok", "3", "Talamban"],
+    "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Send", "to", "Unit", "4A", "Tower", "1", "Banilad"],
+    "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Pa-order", "ko", "3", "Coke", "Zero", "boss"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Pa-order", "lang", "ko", "2", "Royal"],
+    "ner_tags": ["B-ACTION", "O", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Sa", "Mabolo", "lang", "i-deliver"],
+    "ner_tags": ["O", "B-LOCATION", "O", "B-ACTION"]
+  },
+  {
+    "tokens": ["Sa", "Poblacion", "lang", "i-deliver"],
+    "ner_tags": ["O", "B-LOCATION", "O", "B-ACTION"]
+  },
+  {
+    "tokens": ["Send", "to", "Unit", "5C", "Tower", "3", "Banilad"],
+    "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Send", "to", "Room", "15", "Dorm"],
+    "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["GCash", "akong", "bayad", "for", "3", "Royal"],
+    "ner_tags": ["B-PAYMENT", "O", "O", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Cash", "akong", "bayad", "for", "1", "Yakult"],
+    "ner_tags": ["B-PAYMENT", "O", "O", "O", "B-QUANTITY", "B-PRODUCT"]
   }
 
 ]

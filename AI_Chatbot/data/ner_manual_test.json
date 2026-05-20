@@ -1,0 +1,202 @@
+[
+  {
+    "tokens": ["Pa-order", "ko", "2", "Coke", "Zero", "boss"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Palihog", "deliver", "3", "Sprite", "1.5L", "sa", "Lahug"],
+    "ner_tags": ["O", "B-ACTION", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O", "B-LOCATION"]
+  },
+  {
+    "tokens": ["I", "want", "one", "Royal", "Orange", "via", "GCash"],
+    "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O", "B-PAYMENT"]
+  },
+  {
+    "tokens": ["Order", "4", "Yakult", "cash", "please"],
+    "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT", "O"]
+  },
+  {
+    "tokens": ["Hatagi", "kog", "duha", "ka", "Pepsi"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "I-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Mag-order", "ko", "1", "Mountain", "Dew"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["C2", "Apple", "tulo", "ka", "bottle"],
+    "ner_tags": ["B-PRODUCT", "I-PRODUCT", "B-QUANTITY", "I-QUANTITY", "O"]
+  },
+  {
+    "tokens": ["Please", "add", "2", "Royal", "to", "my", "order"],
+    "ner_tags": ["O", "B-ACTION", "B-QUANTITY", "B-PRODUCT", "O", "O", "O"]
+  },
+  {
+    "tokens": ["Add", "1", "Sprite", "and", "2", "Coke"],
+    "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Pun-an", "ug", "lima", "ka", "Yakult"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "I-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Change", "Coke", "to", "Sprite"],
+    "ner_tags": ["B-ACTION", "B-PRODUCT", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Ilisi", "ang", "Royal", "ug", "Pepsi"],
+    "ner_tags": ["B-ACTION", "O", "B-PRODUCT", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Palitan", "mo", "ng", "C2", "Apple", "yung", "Coke"],
+    "ner_tags": ["B-ACTION", "O", "O", "B-PRODUCT", "I-PRODUCT", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Make", "it", "3", "Coke", "Zero", "instead"],
+    "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Update", "my", "order", "to", "2", "Mountain", "Dew"],
+    "ner_tags": ["B-ACTION", "O", "O", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["Cancel", "my", "Sprite", "order"],
+    "ner_tags": ["B-ACTION", "O", "B-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Remove", "1", "Royal", "Orange"],
+    "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["Ayaw", "nalang", "ang", "Pepsi"],
+    "ner_tags": ["O", "O", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Deliver", "2", "Coke", "sa", "IT", "Park"],
+    "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "O", "B-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Padala", "sa", "SM", "Seaside", "ang", "3", "Sprite"],
+    "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Ship", "1", "Royal", "Orange", "to", "Ayala", "Center"],
+    "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O", "B-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Pa-deliver", "ko", "sa", "Block", "8", "Lot", "12"],
+    "ner_tags": ["B-ACTION", "O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Diri", "sa", "Purok", "7", "Mabolo"],
+    "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Send", "to", "Unit", "3B", "Tower", "2", "Banilad"],
+    "ner_tags": ["B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Deliver", "here", "sa", "Barangay", "Apas"],
+    "ner_tags": ["B-ACTION", "O", "O", "B-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Sa", "Talamban", "lang", "i-deliver"],
+    "ner_tags": ["O", "B-LOCATION", "O", "B-ACTION"]
+  },
+  {
+    "tokens": ["GCash", "akong", "bayad", "for", "2", "Yakult"],
+    "ner_tags": ["B-PAYMENT", "O", "O", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Cash", "on", "delivery", "for", "Coke", "Zero"],
+    "ner_tags": ["B-PAYMENT", "I-PAYMENT", "I-PAYMENT", "O", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["Pwede", "PayMaya", "for", "3", "C2", "Apple"],
+    "ner_tags": ["O", "B-PAYMENT", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["Maya", "lang", "for", "Mountain", "Dew"],
+    "ner_tags": ["B-PAYMENT", "O", "O", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["COD", "please", "for", "1", "Sprite"],
+    "ner_tags": ["B-PAYMENT", "O", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["My", "contact", "is", "09176543210"],
+    "ner_tags": ["O", "O", "O", "B-PHONE"]
+  },
+  {
+    "tokens": ["Call", "me", "at", "0998-123-4567"],
+    "ner_tags": ["O", "O", "O", "B-PHONE"]
+  },
+  {
+    "tokens": ["Number", "nako", "+639171234567"],
+    "ner_tags": ["O", "O", "B-PHONE"]
+  },
+  {
+    "tokens": ["Contact", "ko", "09", "17", "123", "4567"],
+    "ner_tags": ["O", "O", "B-PHONE", "I-PHONE", "I-PHONE", "I-PHONE"]
+  },
+  {
+    "tokens": ["Cokeeee", "2", "cash", "sa", "Poblacion"],
+    "ner_tags": ["B-PRODUCT", "B-QUANTITY", "B-PAYMENT", "O", "B-LOCATION"]
+  },
+  {
+    "tokens": ["c0ke", "zero", "isa", "lang"],
+    "ner_tags": ["B-PRODUCT", "I-PRODUCT", "B-QUANTITY", "O"]
+  },
+  {
+    "tokens": ["sprte", "2", "via", "GCash"],
+    "ner_tags": ["B-PRODUCT", "B-QUANTITY", "O", "B-PAYMENT"]
+  },
+  {
+    "tokens": ["pepsi", "plz", "deliver", "Mandaue", "City"],
+    "ner_tags": ["B-PRODUCT", "O", "B-ACTION", "B-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Order", "lang", "ko", "Coke", "and", "Yakult"],
+    "ner_tags": ["B-ACTION", "O", "O", "B-PRODUCT", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Need", "5", "Royal", "Orange", "ASAP"],
+    "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Palit", "ko", "usa", "ka", "Sprite", "1.5L"],
+    "ner_tags": ["B-ACTION", "O", "B-QUANTITY", "I-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["I", "need", "2", "C2", "Apple", "and", "1", "Pepsi"],
+    "ner_tags": ["O", "O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT", "O", "B-QUANTITY", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Deliver", "3", "Yakult", "cash", "to", "Colon", "Street"],
+    "ner_tags": ["B-ACTION", "B-QUANTITY", "B-PRODUCT", "B-PAYMENT", "O", "B-LOCATION", "I-LOCATION"]
+  },
+  {
+    "tokens": ["Magbayad", "ko", "gamit", "GCash", "para", "sa", "Royal"],
+    "ner_tags": ["O", "O", "O", "B-PAYMENT", "O", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Paki", "deliver", "sa", "Room", "12", "Dorm", "ang", "Coke"],
+    "ner_tags": ["O", "B-ACTION", "O", "B-LOCATION", "I-LOCATION", "I-LOCATION", "O", "B-PRODUCT"]
+  },
+  {
+    "tokens": ["Pwede", "2", "bottles", "Mountain", "Dew"],
+    "ner_tags": ["O", "B-QUANTITY", "O", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["Only", "Sprite", "please"],
+    "ner_tags": ["O", "B-PRODUCT", "O"]
+  },
+  {
+    "tokens": ["Just", "one", "Coke", "Zero"],
+    "ner_tags": ["O", "B-QUANTITY", "B-PRODUCT", "I-PRODUCT"]
+  },
+  {
+    "tokens": ["Sa", "Gaisano", "Mall", "ko", "kuhaon"],
+    "ner_tags": ["O", "B-LOCATION", "I-LOCATION", "O", "O"]
+  }
+]
