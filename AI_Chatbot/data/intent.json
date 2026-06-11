@@ -1,715 +1,3998 @@
 [
-
-  {"text": "Pa-order Coke boss", "intent": "order_item"},
-  {"text": "Gusto ko mo order ug Coke", "intent": "order_item"},
-  {"text": "I want to order Royal", "intent": "order_item"},
-  {"text": "I want to order coke", "intent": "order_item"},
-  {"text": "Gusto ko mu-order ug Coke", "intent": "order_item"},
-  {"text": "Pa-order ko coke", "intent": "order_item"},
-  {"text": "Mag-order ko Coke", "intent": "order_item"},
-  {"text": "I would like to buy coke", "intent": "order_item"},
-  {"text": "Palihug ko mo order ko Coke", "intent": "order_item"},
-  {"text": "Pabili Coke", "intent": "order_item"},
-  {"text": "Order ko coke boss", "intent": "order_item"},
-  {"text": "Naa pamo Coke?", "intent": "order_item"},
-  {"text": "Meron pa kayong coke?", "intent": "order_item"},
-  {"text": "ordr coke", "intent": "order_item"},
-  {"text": "coke pls", "intent": "order_item"},
-  {"text": "Coke", "intent": "order_item"},
-  {"text": "Royal", "intent": "order_item"},
-  {"text": "Pwede mag order coke?", "intent": "order_item"},
-  {"text": "I want Coke 1 bottle", "intent": "order_item"},
-  {"text": "Order 1 case Coke", "intent": "order_item"},
-  {"text": "Pa-order Sprite", "intent": "order_item"},
-  {"text": "Gusto ko Pepsi", "intent": "order_item"},
-  {"text": "Add Coke to my order", "intent": "order_item"},
-  {"text": "I need Royal drinks", "intent": "order_item"},
-  {"text": "Order Coke and Sprite", "intent": "order_item"},
-  {"text": "Buy Coke please", "intent": "order_item"},
-  {"text": "I’ll take Coke", "intent": "order_item"},
-  {"text": "Can I get Coke bottle", "intent": "order_item"},
-  {"text": "Order 2 Coke bottles please", "intent": "order_item"},
-  {"text": "Pa deliver Coke", "intent": "order_item"},
-  {"text": "Coke order pls boss", "intent": "order_item"},
-  {"text": "I want drinks order Coke", "intent": "order_item"},
-  {"text": "I want Sprite and Coke", "intent": "order_item"},
-  {"text": "Pa-order 2 Coke and 1 Sprite", "intent": "order_item"},
-  {"text": "Gusto ko Pepsi ug Royal", "intent": "order_item"},
-  {"text": "Order me drinks", "intent": "order_item"},
-  {"text": "I want beverages please", "intent": "order_item"},
-  {"text": "Pa-order drinks boss", "intent": "order_item"},
-  {"text": "Take my order: Coke", "intent": "order_item"},
-  {"text": "I’ll order 1 Coke and 1 Royal", "intent": "order_item"},
-  {"text": "Add Sprite and Pepsi to my order", "intent": "order_item"},
-  {"text": "Coke please deliver", "intent": "order_item"},
-  {"text": "coke lang", "intent": "order_item"},
-  {"text": "just coke", "intent": "order_item"},
-  {"text": "one coke pls boss", "intent": "order_item"},
-  {"text": "2 coke ok", "intent": "order_item"},
-  {"text": "coke and sprite lang", "intent": "order_item"},
-  {"text": "order lang ko", "intent": "order_item"},
-  {"text": "pa order lang boss", "intent": "order_item"},
-  {"text": "gusto ko ani coke", "intent": "order_item"},
-  {"text": "kani coke", "intent": "order_item"},
-  {"text": "this coke pls", "intent": "order_item"},
-  {"text": "I want Coke pero pila delivery?", "intent": "order_item"},
-  {"text": "Pa-order Coke, unsa payment method?", "intent": "order_item"},
-  {"text": "Order Sprite, how much total?", "intent": "order_item"},
-  {"text": "Gusto ko Coke, deliver Cebu City", "intent": "order_item"},
-  {"text": "I want Pepsi, COD ba?", "intent": "order_item"},
-  {"text": "Pa-order Coke, how long delivery?", "intent": "order_item"},
-  {"text": "Order Coke ug Sprite, pila tanan?", "intent": "order_item"},
-  {"text": "I need Coke, cash or GCash?", "intent": "order_item"},
-  {"text": "c0ke pls", "intent": "order_item"},
-  {"text": "koke", "intent": "order_item"},
-  {"text": "cokee", "intent": "order_item"},
-  {"text": "sprte pls", "intent": "order_item"},
-  {"text": "pepsi plz", "intent": "order_item"},
-  {"text": "orderr coke", "intent": "order_item"},
-  {"text": "cokeeee boss", "intent": "order_item"},
-
-  {"text": "Who is the president of the Philippines?", "intent": "out_of_scope"},
-  {"text": "Tell me a joke", "intent": "out_of_scope"},
-  {"text": "What is AI?", "intent": "out_of_scope"},
-  {"text": "How to hack a WiFi?", "intent": "out_of_scope"},
-  {"text": "What is the capital of Japan?", "intent": "out_of_scope"},
-  {"text": "Can you sing a song?", "intent": "out_of_scope"},
-  {"text": "Are you a human?", "intent": "out_of_scope"},
-  {"text": "Sino si Spider-Man?", "intent": "out_of_scope"},
-  {"text": "Ano ang love?", "intent": "out_of_scope"},
-  {"text": "Pwede ka ba maging boyfriend?", "intent": "out_of_scope"},
-  {"text": "Ano ang 1+1?", "intent": "out_of_scope"},
-  {"text": "Gusto ko mag kwento", "intent": "out_of_scope"},
-  {"text": "Kinsa si Messi?", "intent": "out_of_scope"},
-  {"text": "Unsa ang meaning sa life?", "intent": "out_of_scope"},
-  {"text": "Pwede ka mo kanta?", "intent": "out_of_scope"},
-  {"text": "Asa si Taylor Swift karon?", "intent": "out_of_scope"},
-  {"text": "Ngano pula ang langit?", "intent": "out_of_scope"},
-  {"text": "Explain quantum physics", "intent": "out_of_scope"},
-  {"text": "Who won NBA finals", "intent": "out_of_scope"},
-  {"text": "Make me a website code", "intent": "out_of_scope"},
-  {"text": "Tell me history of Japan", "intent": "out_of_scope"},
-  {"text": "Solve this math equation", "intent": "out_of_scope"},
-  {"text": "Who is Elon Musk", "intent": "out_of_scope"},
-  {"text": "Write a poem", "intent": "out_of_scope"},
-  {"text": "What is cryptocurrency", "intent": "out_of_scope"},
-  {"text": "How does hacking work?", "intent": "out_of_scope"},
-  {"text": "What is machine learning", "intent": "out_of_scope"},
-
-  {"text": "Do you have water?", "intent": "business_info"},
-  {"text": "Do you sell Coke?", "intent": "business_info"},
-  {"text": "What products do you have?", "intent": "business_info"},
-  {"text": "Do you have snacks?", "intent": "business_info"},
-  {"text": "Is Coke available?", "intent": "business_info"},
-  {"text": "May tubig ba kayo?", "intent": "business_info"},
-  {"text": "May Coke ba kayo?", "intent": "business_info"},
-  {"text": "Ano ang mga tinda ninyo?", "intent": "business_info"},
-  {"text": "May snacks ba kayo?", "intent": "business_info"},
-  {"text": "Available ba ang Royal?", "intent": "business_info"},
-  {"text": "Naa moy tubig?", "intent": "business_info"},
-  {"text": "Naa moy Coke?", "intent": "business_info"},
-  {"text": "Unsay available ninyo?", "intent": "business_info"},
-  {"text": "Naa moy snacks?", "intent": "business_info"},
-  {"text": "Available ba ang gatas?", "intent": "business_info"},
-  {"text": "Do you have delivery?", "intent": "business_info"},
-  {"text": "Where are you located?", "intent": "business_info"},
-  {"text": "What time are you open?", "intent": "business_info"},
-  {"text": "Do you deliver in Cebu?", "intent": "business_info"},
-  {"text": "Store hours?", "intent": "business_info"},
-  {"text": "Are you open today?", "intent": "business_info"},
-  {"text": "Do you have minimum order?", "intent": "business_info"},
-  {"text": "Is there delivery fee?", "intent": "business_info"},
-  {"text": "How to order from you?", "intent": "business_info"},
-  {"text": "Do you accept bulk orders?", "intent": "business_info"},
-
-  {"text": "2 Coke", "intent": "add_quantity"},
-  {"text": "Add 2 bottles of Coke", "intent": "add_quantity"},
-  {"text": "Make it 3 bottles", "intent": "add_quantity"},
-  {"text": "Add 3 bottles", "intent": "add_quantity"},
-  {"text": "I want 2 Coke and 3 Royal", "intent": "add_quantity"},
-  {"text": "Dalawa lang", "intent": "add_quantity"},
-  {"text": "Magdagdag ng 2 na Coke", "intent": "add_quantity"},
-  {"text": "Gawing 3 bote", "intent": "add_quantity"},
-  {"text": "Pahingi ng 2 Coke", "intent": "add_quantity"},
-  {"text": "Duha lang", "intent": "add_quantity"},
-  {"text": "Duha ka Coke", "intent": "add_quantity"},
-  {"text": "Lima lang ka case", "intent": "add_quantity"},
-  {"text": "Pwede 10 ka case", "intent": "add_quantity"},
-  {"text": "Idugang 2 ka Coke ug 3 ka Royal", "intent": "add_quantity"},
-  {"text": "Add 2 more Coke", "intent": "add_quantity"},
-  {"text": "Add 3 more bottles", "intent": "add_quantity"},
-
-
-  {"text": "Change my order to Royal", "intent": "modify_order"},
-  {"text": "Replace Coke with Royal", "intent": "modify_order"},
-  {"text": "Change my drink", "intent": "modify_order"},
-  {"text": "Can I modify my order?", "intent": "modify_order"},
-  {"text": "Update my order to Pepsi", "intent": "modify_order"},
-  {"text": "Switch Coke to Sprite", "intent": "modify_order"},
-  {"text": "I want to change my order", "intent": "modify_order"},
-  {"text": "Make it Royal instead", "intent": "modify_order"},
-  {"text": "Can you change my item?", "intent": "modify_order"},
-  {"text": "Replace it with water", "intent": "modify_order"},
-  {"text": "I changed my mind, update order", "intent": "modify_order"},
-  {"text": "Modify my purchase", "intent": "modify_order"},
-  {"text": "Pwede palitan ang order ko?", "intent": "modify_order"},
-  {"text": "Palitan mo ng Royal ang Coke ko", "intent": "modify_order"},
-  {"text": "Gusto ko baguhin ang order ko", "intent": "modify_order"},
-  {"text": "Palitan ang inorder ko", "intent": "modify_order"},
-  {"text": "Gawing Sprite ang Coke", "intent": "modify_order"},
-  {"text": "Pwede bang baguhin ang order?", "intent": "modify_order"},
-  {"text": "Palitan mo ng tubig ang order ko", "intent": "modify_order"},
-  {"text": "I-update ang order ko", "intent": "modify_order"},
-  {"text": "Baguhin ang binili ko", "intent": "modify_order"},
-  {"text": "Palitan ng Pepsi ang order ko", "intent": "modify_order"},
-  {"text": "Nagbago ang isip ko, palitan mo", "intent": "modify_order"},
-  {"text": "Ayusin ang order ko", "intent": "modify_order"},
-  {"text": "Pwede ilisan akong order?", "intent": "modify_order"},
-  {"text": "Ilisi ang Coke og Royal", "intent": "modify_order"},
-  {"text": "Usba akong order", "intent": "modify_order"},
-  {"text": "Gusto ko ilisan akong gi-order", "intent": "modify_order"},
-  {"text": "I-change akong order", "intent": "modify_order"},
-  {"text": "Pwede ba usbon akong order?", "intent": "modify_order"},
-  {"text": "Ilisi ug Sprite ang Coke", "intent": "modify_order"},
-  {"text": "Usba ang akong order ngadto Pepsi", "intent": "modify_order"},
-  {"text": "Bag-o ang akong gi-desire, ilisi", "intent": "modify_order"},
-  {"text": "Palihog usba akong order", "intent": "modify_order"},
-  {"text": "Ilisi ang item sa order", "intent": "modify_order"},
-  {"text": "Gusto ko mausab akong order", "intent": "modify_order"},
-  {"text": "Change Coke to Royal pls", "intent": "modify_order"},
-  {"text": "Pwede ilisan Coke to Sprite", "intent": "modify_order"},
-  {"text": "Make it Pepsi instead", "intent": "modify_order"},
-  {"text": "Ilisi to water instead", "intent": "modify_order"},
-  {"text": "Change my order pls", "intent": "modify_order"},
-  {"text": "Usba to Royal", "intent": "modify_order"},
-  {"text": "Palitan to Coke", "intent": "modify_order"},
-  {"text": "Switch it to Sprite", "intent": "modify_order"},
-  
-  {"text": "Here is my address", "intent": "provide_address"},
-  {"text": "Deliver to my house", "intent": "provide_address"},
-  {"text": "My address is Cebu City", "intent": "provide_address"},
-  {"text": "Send it to this location", "intent": "provide_address"},
-  {"text": "Deliver to my location", "intent": "provide_address"},
-  {"text": "Ship it to my house", "intent": "provide_address"},
-  {"text": "Here is my delivery address", "intent": "provide_address"},
-  {"text": "Please deliver here", "intent": "provide_address"},
-  {"text": "This is my address", "intent": "provide_address"},
-  {"text": "Ito ang address ko", "intent": "provide_address"},
-  {"text": "I-deliver sa bahay ko", "intent": "provide_address"},
-  {"text": "Sa Cebu City ang address ko", "intent": "provide_address"},
-  {"text": "Ipadala dito sa address na ito", "intent": "provide_address"},
-  {"text": "Ito delivery address ko", "intent": "provide_address"},
-  {"text": "Dito mo ipadala", "intent": "provide_address"},
-  {"text": "Sa bahay ko i-deliver", "intent": "provide_address"},
-  {"text": "Ito ang location ko", "intent": "provide_address"},
-  {"text": "Deliver sa Poblacion", "intent": "provide_address"},
-  {"text": "Ani akong address", "intent": "provide_address"},
-  {"text": "I-deliver diri sa akong balay", "intent": "provide_address"},
-  {"text": "Sa Cebu City ko gapuyo", "intent": "provide_address"},
-  {"text": "Ani ang akong location", "intent": "provide_address"},
-  {"text": "Diri lang i-deliver", "intent": "provide_address"},
-  {"text": "Sa akong house i-deliver", "intent": "provide_address"},
-  {"text": "Ani ang delivery address", "intent": "provide_address"},
-  {"text": "Poblacion area ko", "intent": "provide_address"},
-  {"text": "Deliver sa Poblacion area", "intent": "provide_address"},
-  {"text": "Here is my address sa Cebu", "intent": "provide_address"},
-  {"text": "I-deliver to my house pls", "intent": "provide_address"},
-  {"text": "Ani address ko: Cebu City", "intent": "provide_address"},
-  {"text": "Send it here Poblacion", "intent": "provide_address"},
-  {"text": "Diri ko sa Cebu City", "intent": "provide_address"},
-  {"text": "This is my location Poblacion", "intent": "provide_address"},
-
-  {"text": "Here is my number 09123456789", "intent": "provide_contact"},
-  {"text": "My contact number is 09123456789", "intent": "provide_contact"},
-  {"text": "You can reach me at this number", "intent": "provide_contact"},
-  {"text": "Here is my phone number", "intent": "provide_contact"},
-  {"text": "This is my contact info", "intent": "provide_contact"},
-  {"text": "Call me at 09123456789", "intent": "provide_contact"},
-  {"text": "My number is 09981234567", "intent": "provide_contact"},
-  {"text": "Contact me here", "intent": "provide_contact"},
-  {"text": "Ito ang number ko 09123456789", "intent": "provide_contact"},
-  {"text": "Maaari mo akong tawagan sa 09123456789", "intent": "provide_contact"},
-  {"text": "Ito ang contact number ko", "intent": "provide_contact"},
-  {"text": "Ito ang cellphone ko", "intent": "provide_contact"},
-  {"text": "Tawagan mo ako sa numerong ito", "intent": "provide_contact"},
-  {"text": "Contact number ko ay 09981234567", "intent": "provide_contact"},
-  {"text": "Ito ang number ko para sa order", "intent": "provide_contact"},
-  {"text": "Mao ni akong contact number 09123456789", "intent": "provide_contact"},
-  {"text": "Tawagi ko ani nga number", "intent": "provide_contact"},
-  {"text": "Ani akong cellphone number", "intent": "provide_contact"},
-  {"text": "Pwede ko tawagan ani 09981234567", "intent": "provide_contact"},
-  {"text": "Contact number nako ni", "intent": "provide_contact"},
-  {"text": "Ani akong number para sa order", "intent": "provide_contact"},
-  {"text": "I-contact ko ani nga number", "intent": "provide_contact"},
-  {"text": "Here is my number 09123456789 lang", "intent": "provide_contact"},
-  {"text": "Mao ni akong number 09981234567 pls", "intent": "provide_contact"},
-  {"text": "Contact me here 09123456789", "intent": "provide_contact"},
-  {"text": "Ani akong number for delivery", "intent": "provide_contact"},
-  {"text": "Call me here lang 09123456789", "intent": "provide_contact"},
-  {"text": "Mao ni contact ko Cebu", "intent": "provide_contact"},
-
-  {"text": "How long is the delivery?", "intent": "delivery_time"},
-  {"text": "How many minutes does delivery take?", "intent": "delivery_time"},
-  {"text": "What is the delivery time?", "intent": "delivery_time"},
-  {"text": "How fast is your delivery?", "intent": "delivery_time"},
-  {"text": "When will my order arrive?", "intent": "delivery_time"},
-  {"text": "Estimated delivery time?", "intent": "delivery_time"},
-  {"text": "How soon can you deliver?", "intent": "delivery_time"},
-  {"text": "How long will it take?", "intent": "delivery_time"},
-  {"text": "Gaano katagal ang delivery?", "intent": "delivery_time"},
-  {"text": "Ilang minuto ang delivery?", "intent": "delivery_time"},
-  {"text": "Kailan darating ang order ko?", "intent": "delivery_time"},
-  {"text": "Gaano kabilis ang delivery ninyo?", "intent": "delivery_time"},
-  {"text": "Ano ang delivery time?", "intent": "delivery_time"},
-  {"text": "Tagal ng delivery?", "intent": "delivery_time"},
-  {"text": "Gaano katagal bago dumating?", "intent": "delivery_time"},
-  {"text": "Pila ka minutes ang delivery?", "intent": "delivery_time"},
-  {"text": "Unsa ka dugay ang delivery?", "intent": "delivery_time"},
-  {"text": "Kanus-a maabot akong order?", "intent": "delivery_time"},
-  {"text": "Paspas ba inyong delivery?", "intent": "delivery_time"},
-  {"text": "Pila ka oras ang delivery?", "intent": "delivery_time"},
-  {"text": "Unsa kadugay mo deliver?", "intent": "delivery_time"},
-  {"text": "Tagal sa delivery?", "intent": "delivery_time"},
-  {"text": "How long delivery sa Cebu?", "intent": "delivery_time"},
-  {"text": "Pila ka minutes delivery ninyo?", "intent": "delivery_time"},
-  {"text": "When maabot ang order ko?", "intent": "delivery_time"},
-  {"text": "Gaano katagal delivery here?", "intent": "delivery_time"},
-  {"text": "Unsa ka dugay delivery pls", "intent": "delivery_time"},
-  {"text": "How fast inyong delivery service?", "intent": "delivery_time"},
-
-  {"text": "Okay", "intent": "confirmation"},
-  {"text": "Yes", "intent": "confirmation"},
-  {"text": "Yes proceed", "intent": "confirmation"},
-  {"text": "Go ahead", "intent": "confirmation"},
-  {"text": "Sure", "intent": "confirmation"},
-  {"text": "Alright", "intent": "confirmation"},
-  {"text": "Proceed", "intent": "confirmation"},
-  {"text": "Yes please", "intent": "confirmation"},
-  {"text": "That’s fine", "intent": "confirmation"},
-  {"text": "Confirm it", "intent": "confirmation"},
-  {"text": "Sige", "intent": "confirmation"},
-  {"text": "Oo", "intent": "confirmation"},
-  {"text": "Sige go", "intent": "confirmation"},
-  {"text": "Okay lang", "intent": "confirmation"},
-  {"text": "Sige tuloy", "intent": "confirmation"},
-  {"text": "Sige approve", "intent": "confirmation"},
-  {"text": "Oo pwede", "intent": "confirmation"},
-  {"text": "Sige na", "intent": "confirmation"},
-  {"text": "Okay na yan", "intent": "confirmation"},
-  {"text": "Sige go", "intent": "confirmation"},
-  {"text": "Oo", "intent": "confirmation"},
-  {"text": "Sige ra", "intent": "confirmation"},
-  {"text": "Okay ra", "intent": "confirmation"},
-  {"text": "Tuloy lang", "intent": "confirmation"},
-  {"text": "Sige proceed", "intent": "confirmation"},
-  {"text": "Pwede ra", "intent": "confirmation"},
-  {"text": "Sige lang", "intent": "confirmation"},
-  {"text": "Go ahead lang", "intent": "confirmation"},
-  {"text": "Okay go lang", "intent": "confirmation"},
-  {"text": "Sige proceed na", "intent": "confirmation"},
-  {"text": "Yes go ahead", "intent": "confirmation"},
-  {"text": "Sige ra continue", "intent": "confirmation"},
-  {"text": "Okay na, proceed", "intent": "confirmation"},
-  {"text": "Oo go lang", "intent": "confirmation"},
-  {"text": "Sige okay", "intent": "confirmation"},
-
-  {"text": "No thanks", "intent": "rejection"},
-  {"text": "No", "intent": "rejection"},
-  {"text": "Nope", "intent": "rejection"},
-  {"text": "Not now", "intent": "rejection"},
-  {"text": "I don’t want it", "intent": "rejection"},
-  {"text": "Cancel it", "intent": "rejection"},
-  {"text": "No I changed my mind", "intent": "rejection"},
-  {"text": "Stop", "intent": "rejection"},
-  {"text": "Ayaw ko", "intent": "rejection"},
-  {"text": "Hindi", "intent": "rejection"},
-  {"text": "Huwag na", "intent": "rejection"},
-  {"text": "Ayaw nalang", "intent": "rejection"},
-  {"text": "Hindi na lang", "intent": "rejection"},
-  {"text": "Ayoko yan", "intent": "rejection"},
-  {"text": "I-cancel mo", "intent": "rejection"},
-  {"text": "Pass ako", "intent": "rejection"},
-  {"text": "Ayaw nalang", "intent": "rejection"},
-  {"text": "Dili", "intent": "rejection"},
-  {"text": "Ayaw ko ana", "intent": "rejection"},
-  {"text": "Pass lang", "intent": "rejection"},
-  {"text": "Dili na lang", "intent": "rejection"},
-  {"text": "Wala na", "intent": "rejection"},
-  {"text": "Ayaw na", "intent": "rejection"},
-  {"text": "Cancel nalang", "intent": "rejection"},
-  {"text": "No thanks lang", "intent": "rejection"},
-  {"text": "Ayaw nalang proceed", "intent": "rejection"},
-  {"text": "Nope cancel it", "intent": "rejection"},
-  {"text": "Dili nalang ko", "intent": "rejection"},
-  {"text": "Stop na lang", "intent": "rejection"},
-  {"text": "Hindi na lang pala", "intent": "rejection"},
-  {"text": "Ayaw ko ana pls", "intent": "rejection"},
-
-  {"text": "How much is Coke?", "intent": "ask_price"},
-  {"text": "How much for Coke?", "intent": "ask_price"},
-  {"text": "What is the price of Coke?", "intent": "ask_price"},
-  {"text": "How much does Coke cost?", "intent": "ask_price"},
-  {"text": "Price of Coke?", "intent": "ask_price"},
-  {"text": "How much is one Coke?", "intent": "ask_price"},
-  {"text": "How much per Coke bottle?", "intent": "ask_price"},
-  {"text": "Magkano ang Coke?", "intent": "ask_price"},
-  {"text": "Magkano po ang Coke?", "intent": "ask_price"},
-  {"text": "Ano ang presyo ng Coke?", "intent": "ask_price"},
-  {"text": "Magkano isa Coke?", "intent": "ask_price"},
-  {"text": "How much ang Coke?", "intent": "ask_price"},
-  {"text": "Presyo ng Coke?", "intent": "ask_price"},
-  {"text": "Tagpila ang Coke?", "intent": "ask_price"},
-  {"text": "Unsay presyo sa Coke?", "intent": "ask_price"},
-  {"text": "Pila ni boss Coke?", "intent": "ask_price"},
-  {"text": "Tagpila ni?", "intent": "ask_price"},
-  {"text": "Pila ka isa Coke?", "intent": "ask_price"},
-  {"text": "Hm Coke?", "intent": "ask_price"},
-  {"text": "Pila ang isa ka Coke bottle?", "intent": "ask_price"},
-  {"text": "How much Coke boss?", "intent": "ask_price"},
-  {"text": "Pila ni Coke boss?", "intent": "ask_price"},
-  {"text": "Hm Coke lang?", "intent": "ask_price"},
-  {"text": "Tagpila Coke sa inyo?", "intent": "ask_price"},
-  {"text": "Magkano Coke here?", "intent": "ask_price"},
-  {"text": "Pila ang Coke ngayon?", "intent": "ask_price"},
-  {"text": "How much ni Coke sa Cebu?", "intent": "ask_price"},
-
-  {"text": "Hello", "intent": "greeting"},
-  {"text": "Hi", "intent": "greeting"},
-  {"text": "Hey", "intent": "greeting"},
-  {"text": "Good morning", "intent": "greeting"},
-  {"text": "Good afternoon", "intent": "greeting"},
-  {"text": "Good evening", "intent": "greeting"},
-  {"text": "Hi there", "intent": "greeting"},
-  {"text": "Hello there", "intent": "greeting"},
-  {"text": "Hey boss", "intent": "greeting"},
-  {"text": "Kumusta", "intent": "greeting"},
-  {"text": "Kamusta ka", "intent": "greeting"},
-  {"text": "Magandang umaga", "intent": "greeting"},
-  {"text": "Magandang tanghali", "intent": "greeting"},
-  {"text": "Magandang hapon", "intent": "greeting"},
-  {"text": "Magandang gabi", "intent": "greeting"},
-  {"text": "Hi po", "intent": "greeting"},
-  {"text": "Hello po", "intent": "greeting"},
-  {"text": "Uy", "intent": "greeting"},
-  {"text": "Maayong adlaw", "intent": "greeting"},
-  {"text": "Maayong buntag", "intent": "greeting"},
-  {"text": "Maayong hapon", "intent": "greeting"},
-  {"text": "Maayong gabii", "intent": "greeting"},
-  {"text": "Kumusta", "intent": "greeting"},
-  {"text": "Kamusta boss", "intent": "greeting"},
-  {"text": "Hi boss", "intent": "greeting"},
-  {"text": "Hello boss", "intent": "greeting"},
-  {"text": "Oy", "intent": "greeting"},
-  {"text": "Hi boss", "intent": "greeting"},
-  {"text": "Hello boss", "intent": "greeting"},
-  {"text": "Maayong adlaw boss", "intent": "greeting"},
-  {"text": "Kamusta boss", "intent": "greeting"},
-  {"text": "Hey boss good morning", "intent": "greeting"},
-  {"text": "Hi po good morning", "intent": "greeting"},
-  {"text": "Hello maayong adlaw", "intent": "greeting"},
-  {"text": "Uy boss", "intent": "greeting"},
-
-
-  {"text": "Can I pay via GCash?", "intent": "payment_method"},
-  {"text": "Do you accept GCash?", "intent": "payment_method"},
-  {"text": "What payment methods do you accept?", "intent": "payment_method"},
-  {"text": "Cash or GCash?", "intent": "payment_method"},
-  {"text": "Do you accept online payment?", "intent": "payment_method"},
-  {"text": "Can I pay online?", "intent": "payment_method"},
-  {"text": "Is cash on delivery available?", "intent": "payment_method"},
-  {"text": "Do you accept PayMaya?", "intent": "payment_method"},
-  {"text": "Pwede GCash?", "intent": "payment_method"},
-  {"text": "Tumatanggap ba kayo ng GCash?", "intent": "payment_method"},
-  {"text": "Ano ang payment options?", "intent": "payment_method"},
-  {"text": "Cash o GCash?", "intent": "payment_method"},
-  {"text": "Pwede bang online payment?", "intent": "payment_method"},
-  {"text": "May cash on delivery ba?", "intent": "payment_method"},
-  {"text": "Pwede ba PayMaya?", "intent": "payment_method"},
-  {"text": "Ano mga pwedeng bayad?", "intent": "payment_method"},
-  {"text": "Pwede GCash?", "intent": "payment_method"},
-  {"text": "Tanggap mo GCash?", "intent": "payment_method"},
-  {"text": "Unsay payment options ninyo?", "intent": "payment_method"},
-  {"text": "Cash or GCash ba?", "intent": "payment_method"},
-  {"text": "Pwede online payment?", "intent": "payment_method"},
-  {"text": "Naa bay COD?", "intent": "payment_method"},
-  {"text": "Pwede PayMaya?", "intent": "payment_method"},
-  {"text": "Unsa pwede bayad?", "intent": "payment_method"},
-  {"text": "gcash", "intent": "payment_method"},
-  {"text": "GCash pwede?", "intent": "payment_method"},
-  {"text": "Cash or gcash lang?", "intent": "payment_method"},
-  {"text": "Pwede GCash or cash?", "intent": "payment_method"},
-  {"text": "Do you accept gcash boss?", "intent": "payment_method"},
-  {"text": "Cash on delivery pwede?", "intent": "payment_method"},
-  {"text": "Online payment like GCash okay?", "intent": "payment_method"},
-  {"text": "Maya or gcash accepted?", "intent": "payment_method"},
-
-  {"text": "Do you have Pepsi?", "intent": "check_availability"},
-  {"text": "Is Coke available?", "intent": "check_availability"},
-  {"text": "Do you have Sprite?", "intent": "check_availability"},
-  {"text": "What drinks are available?", "intent": "check_availability"},
-  {"text": "Is Royal available?", "intent": "check_availability"},
-  {"text": "May Pepsi ba kayo?", "intent": "check_availability"},
-  {"text": "Meron bang Coke?", "intent": "check_availability"},
-  {"text": "Available ba ang Sprite?", "intent": "check_availability"},
-  {"text": "Ano ang available na drinks?", "intent": "check_availability"},
-  {"text": "May stock pa ba ng Coke?", "intent": "check_availability"},
-  {"text": "Naay Pepsi?", "intent": "check_availability"},
-  {"text": "Naay Coke?", "intent": "check_availability"},
-  {"text": "Naay Sprite available?", "intent": "check_availability"},
-  {"text": "Unsa nga drinks ang available?", "intent": "check_availability"},
-  {"text": "Naa pa ba stock sa Royal?", "intent": "check_availability"},
-  {"text": "Do you have Coke pa?", "intent": "check_availability"},
-  {"text": "Available pa ba Pepsi ninyo?", "intent": "check_availability"},
-  {"text": "Naay stock pa ba Sprite?", "intent": "check_availability"},
-  {"text": "Is Coke still available ba?", "intent": "check_availability"},
-  {"text": "Unsa pa available drinks ninyo?", "intent": "check_availability"},
-  {"text": "May Coke pa ba kayo available?", "intent": "check_availability"},
-  {"text": "Do you have pa Sprite?", "intent": "check_availability"},
-  {"text": "Naay Pepsi or Coke available?", "intent": "check_availability"},
-  {"text": "Available pa ba ang drinks ninyo?", "intent": "check_availability"},
-  {"text": "Pwede pa maka-order Coke, available pa?", "intent": "check_availability"},
-
-  {"text": "Unsaon pag order", "intent": "help"},
-  {"text": "How to order?", "intent": "help"},
-  {"text": "Paano umorder?", "intent": "help"},
-  {"text": "Unsaon pag cancel ang order?", "intent": "help"},
-  {"text": "How to cancel order?", "intent": "help"},
-  {"text": "How does this work?", "intent": "help"},
-  {"text": "Tell me about your menu", "intent": "help"},
-  {"text": "Pahingi ng menu", "intent": "help"},
-  {"text": "I need help", "intent": "help"},
-  {"text": "Tabangi ko", "intent": "help"},
-  {"text": "Unsay menu ninyo?", "intent": "help"},
-  {"text": "What can I order here?", "intent": "help"},
-  {"text": "Pwede ko mangutana?", "intent": "help"},
-  {"text": "Pwede ba naku ma cancel ang order anytime?", "intent": "help"},
-
-  {"text": "How do I place an order here?", "intent": "help"},
-  {"text": "Giunsa pag order diri?", "intent": "help"},
-  {"text": "Paano mag-order dito?", "intent": "help"},
-  {"text": "Can you teach me how to order?", "intent": "help"},
-  {"text": "Unsaon pag place order?", "intent": "help"},
-  {"text": "How do I use this system?", "intent": "help"},
-  {"text": "Giunsa ni siya pag gamit?", "intent": "help"},
-  {"text": "Paano gamitin ito?", "intent": "help"},
-  {"text": "Unsay process ani?", "intent": "help"},
-  {"text": "How does ordering work here?", "intent": "help"},
-  {"text": "Can I cancel my order?", "intent": "help"},
-  {"text": "Pwede ba nako i-cancel akong order?", "intent": "help"},
-  {"text": "Maaari ko bang i-cancel ang order ko?", "intent": "help"},
-  {"text": "Giunsa pag cancel sa order?", "intent": "help"},
-  {"text": "Show me your menu please", "intent": "help"},
-  {"text": "Ipakita ang menu ninyo", "intent": "help"},
-  {"text": "Pakita menu ninyo", "intent": "help"},
-  {"text": "Unsay available sa menu?", "intent": "help"},
-  {"text": "I don’t know how to order", "intent": "help"},
-  {"text": "Wala ko kabalo unsaon pag order", "intent": "help"},
-  {"text": "Hindi ko alam paano umorder", "intent": "help"},
-  {"text": "Can you assist me?", "intent": "help"},
-  {"text": "Pwede ko nimo tabangan?", "intent": "help"},
-  {"text": "Pwede mo ko tulungan?", "intent": "help"},
-  {"text": "What should I do next?", "intent": "help"},
-  {"text": "Unsa akong buhaton sunod?", "intent": "help"},
-  {"text": "Ano susunod kong gagawin?", "intent": "help"},
-  {"text": "Is there a guide for ordering?", "intent": "help"},
-  {"text": "Naay guide sa pag order?", "intent": "help"},
-  {"text": "May guide ba kayo paano umorder?", "intent": "help"},
-
-  {"text": "Cancel my order", "intent": "cancel_order"},
-  {"text": "I want to cancel", "intent": "cancel_order"},
-  {"text": "Please cancel my order", "intent": "cancel_order"},
-  {"text": "Ayaw nalang akong order", "intent": "cancel_order"},
-  {"text": "Unsaon pag cancel sa order?", "intent": "cancel_order"},
-  {"text": "Gi-cancel nako akong order", "intent": "cancel_order"},
-  {"text": "Pwede i-cancel akong order?", "intent": "cancel_order"},
-  {"text": "I want to cancel my order please", "intent": "cancel_order"},
-  {"text": "Can you cancel my order?", "intent": "cancel_order"},
-  {"text": "Cancel na akong order", "intent": "cancel_order"},
-  {"text": "Ayaw na dayon akong order", "intent": "cancel_order"},
-  {"text": "Wala na, i-cancel nalang akong order", "intent": "cancel_order"},
-  {"text": "Gusto ko i-cancel ang order ko", "intent": "cancel_order"},
-  {"text": "Paki cancel po ng order ko", "intent": "cancel_order"},
-  {"text": "Maaari bang i-cancel ang order ko?", "intent": "cancel_order"},
-  {"text": "Hindi ko na itutuloy ang order", "intent": "cancel_order"},
-  {"text": "Unsaon nako pag cancel ani nga order?", "intent": "cancel_order"},
-  {"text": "How do I cancel my order?", "intent": "cancel_order"},
-  {"text": "Paano ko icacancel ang order ko?", "intent": "cancel_order"},
-  {"text": "Is it possible to cancel my order?", "intent": "cancel_order"},
-  {"text": "Cancel order ASAP", "intent": "cancel_order"},
-  {"text": "Cancel it right now", "intent": "cancel_order"},
-  {"text": "Ayaw na ni ipadayon akong order", "intent": "cancel_order"},
-  {"text": "Stop my order", "intent": "cancel_order"},
-  {"text": "Please stop my order process", "intent": "cancel_order"},
-  {"text": "Giunsa pag cancel ang akong order?", "intent": "cancel_order"},
-  {"text": "Pwede pa ba nako i-cancel akong order?", "intent": "cancel_order"},
-  {"text": "Wala na ko ganahi, cancel nalang", "intent": "cancel_order"},
-
-  {"text": "Order status please", "intent": "order_status"},
-  {"text": "Where is my order?", "intent": "order_status"},
-  {"text": "Track my order", "intent": "order_status"},
-  {"text": "When will my order arrive?", "intent": "order_status"},
-  {"text": "Is my order on the way?", "intent": "order_status"},
-  {"text": "Delivery status", "intent": "order_status"},
-  {"text": "Asa na dapit akong order?", "intent": "order_status"},
-  {"text": "Asa na akong order?", "intent": "order_status"},
-  {"text": "Na deliver na ba akong order?", "intent": "order_status"},
-  {"text": "Na process na akong order?", "intent": "order_status"},
-  {"text": "Giunsa na akong order?", "intent": "order_status"},
-  {"text": "Saan na ang order ko?", "intent": "order_status"},
-  {"text": "Nasa na ba ang order ko?", "intent": "order_status"},
-  {"text": "Kailan darating ang order ko?", "intent": "order_status"},
-  {"text": "Naipadala na ba ang order ko?", "intent": "order_status"},
-  {"text": "Nasaan na ang delivery ko?", "intent": "order_status"},
-  {"text": "Can you track my order?", "intent": "order_status"},
-  {"text": "Please check my order status", "intent": "order_status"},
-  {"text": "Update on my order please", "intent": "order_status"},
-  {"text": "Is my order ready?", "intent": "order_status"},
-  {"text": "Is my order already shipped?", "intent": "order_status"},
-  {"text": "Na deliver na ba?", "intent": "order_status"},
-  {"text": "On the way na ba ang order ko?", "intent": "order_status"},
-  {"text": "Asa na gid ang akong order?", "intent": "order_status"},
-  {"text": "Pwede ma track akong order?", "intent": "order_status"},
-  {"text": "When will it arrive?", "intent": "order_status"},
-  {"text": "Kanus-a muabot akong order?", "intent": "order_status"},
-  {"text": "Kailan ma-deliver?", "intent": "order_status"},
-  {"text": "Is my order still processing?", "intent": "order_status"},
-  {"text": "Naa pa ba sa process akong order?", "intent": "order_status"},
-
-  {"text": "Slow delivery", "intent": "complaint"},
-  {"text": "Dugay kaayo ang order", "intent": "complaint"},
-  {"text": "Wrong item delivered", "intent": "complaint"},
-  {"text": "Na wrong akong order", "intent": "complaint"},
-  {"text": "Not satisfied", "intent": "complaint"},
-  {"text": "Delivery is too slow", "intent": "complaint"},
-  {"text": "Very late ang delivery", "intent": "complaint"},
-  {"text": "Dugay kaayo moabot ang order", "intent": "complaint"},
-  {"text": "Na delay akong order", "intent": "complaint"},
-  {"text": "Order arrived late", "intent": "complaint"},
-  {"text": "I received the wrong item", "intent": "complaint"},
-  {"text": "Wrong product ang nadawat nako", "intent": "complaint"},
-  {"text": "Sayop ang gi-deliver", "intent": "complaint"},
-  {"text": "Na wrong item naabot", "intent": "complaint"},
-  {"text": "Incorrect order delivered", "intent": "complaint"},
-  {"text": "My order is incomplete", "intent": "complaint"},
-  {"text": "Kulangan ang order ko", "intent": "complaint"},
-  {"text": "Missing items in my order", "intent": "complaint"},
-  {"text": "Naay kulang sa akong order", "intent": "complaint"},
-  {"text": "Bad service", "intent": "complaint"},
-  {"text": "Poor service", "intent": "complaint"},
-  {"text": "Dili tarong ang service", "intent": "complaint"},
-  {"text": "Way ayo ang service", "intent": "complaint"},
-  {"text": "I am not happy with my order", "intent": "complaint"},
-  {"text": "Dili ko satisfied sa order", "intent": "complaint"},
-  {"text": "Wala ko nalipay sa akong order", "intent": "complaint"},
-  {"text": "Hindi ako satisfied", "intent": "complaint"},
-  {"text": "The drink is spilled", "intent": "complaint"},
-  {"text": "Natagak ang Coke", "intent": "complaint"},
-  {"text": "Leaked ang bottle", "intent": "complaint"},
-  {"text": "My order is damaged", "intent": "complaint"},
-  {"text": "Guba ang nadawat nako", "intent": "complaint"},
-  {"text": "Broken item delivered", "intent": "complaint"},
-  {"text": "Driver was rude", "intent": "complaint"},
-  {"text": "Masungit ang nag deliver", "intent": "complaint"},
-  {"text": "Dili tarong ang delivery rider", "intent": "complaint"},
-  {"text": "Order not correct", "intent": "complaint"},
-  {"text": "Sayop ang order", "intent": "complaint"},
-  {"text": "Wrong order received", "intent": "complaint"},
-  {"text": "Took too long to deliver", "intent": "complaint"},
-  {"text": "Grabe ka dugay ang delivery", "intent": "complaint"},
-  {"text": "Super delayed ang order", "intent": "complaint"},
-  {"text": "Hindi tama ang order ko", "intent": "complaint"},
-  {"text": "Mali ang delivery", "intent": "complaint"},
-  {"text": "Hindi ito ang inorder ko", "intent": "complaint"},
-  {"text": "Unsatisfactory experience", "intent": "complaint"},
-  {"text": "Dili maayo akong experience", "intent": "complaint"},
-  {"text": "Bad experience sa order", "intent": "complaint"},
-
-  {"text": "Thank you", "intent": "thanks"},
-  {"text": "Salamat", "intent": "thanks"},
-  {"text": "Thanks boss", "intent": "thanks"},
-  {"text": "Daghang salamat", "intent": "thanks"},
-  {"text": "Thank you so much", "intent": "thanks"},
-  {"text": "Thanks a lot", "intent": "thanks"},
-  {"text": "Thank you very much", "intent": "thanks"},
-  {"text": "Maraming salamat", "intent": "thanks"},
-  {"text": "Salamat kaayo", "intent": "thanks"},
-  {"text": "Thanks po", "intent": "thanks"},
-  {"text": "Salamat po", "intent": "thanks"},
-  {"text": "Salamat boss", "intent": "thanks"},
-  {"text": "Thanks kaayo boss", "intent": "thanks"},
-  {"text": "Appreciate it", "intent": "thanks"},
-  {"text": "I appreciate it", "intent": "thanks"},
-  {"text": "Much appreciated", "intent": "thanks"},
-  {"text": "Really appreciate it", "intent": "thanks"},
-  {"text": "Okay thank you", "intent": "thanks"},
-  {"text": "Alright thanks", "intent": "thanks"},
-  {"text": "Sige salamat", "intent": "thanks"},
-  {"text": "Okay salamat", "intent": "thanks"},
-  {"text": "Thanks for your help", "intent": "thanks"},
-  {"text": "Salamat sa tabang", "intent": "thanks"},
-  {"text": "Salamat sa assistance", "intent": "thanks"},
-  {"text": "Thank you for assisting me", "intent": "thanks"},
-  {"text": "Thanks for the order", "intent": "thanks"},
-  {"text": "Salamat sa order", "intent": "thanks"},
-  {"text": "Thanks sa delivery", "intent": "thanks"},
-  {"text": "Salamat sa pag deliver", "intent": "thanks"},
-  {"text": "Thanks mate", "intent": "thanks"},
-  {"text": "Thanks friend", "intent": "thanks"},
-  {"text": "Thank you sir", "intent": "thanks"},
-  {"text": "Thank you maam", "intent": "thanks"},
-  {"text": "Salamat gyud", "intent": "thanks"},
-  {"text": "Daghang salamat kaayo", "intent": "thanks"},
-  {"text": "Salamat kaayo boss", "intent": "thanks"},
-  {"text": "Dako nga salamat", "intent": "thanks"},
-  {"text": "Many thanks", "intent": "thanks"},
-  {"text": "Thanks again", "intent": "thanks"},
-  {"text": "Thank you again", "intent": "thanks"},
-  {"text": "Salamat balik", "intent": "thanks"},
-  {"text": "That’s all thank you", "intent": "thanks"},
-  {"text": "Okay thanks done", "intent": "thanks"},
-  {"text": "Salamat, okay na", "intent": "thanks"},
-
-  {"text": "asdasdasd", "intent": "fallback"},
-  {"text": "???", "intent": "fallback"},
-  {"text": "random text", "intent": "fallback"},
-  {"text": "qwerty", "intent": "fallback"},
-  {"text": "zxcvbnm", "intent": "fallback"},
-  {"text": "....", "intent": "fallback"},
-  {"text": "???!!!", "intent": "fallback"},
-  {"text": "123456", "intent": "fallback"},
-  {"text": "huh", "intent": "fallback"},
-  {"text": "whattt", "intent": "fallback"},
-  {"text": "idk", "intent": "fallback"},
-  {"text": "??? coke ???", "intent": "fallback"},
-  {"text": "order???", "intent": "fallback"},
-  {"text": "coke delivery??? what", "intent": "fallback"},
-  {"text": "huh unsa ni", "intent": "fallback"},
-  {"text": "unsa???", "intent": "fallback"},
-  {"text": "ano to", "intent": "fallback"},
-  {"text": "what is dis", "intent": "fallback"},
-  {"text": "p0r3g4", "intent": "fallback"},
-  {"text": "lkjhgfdsa", "intent": "fallback"},
-  {"text": "asdfgh coke", "intent": "fallback"},
-  {"text": "order.... maybe", "intent": "fallback"},
-  {"text": "i dont know???", "intent": "fallback"},
-  {"text": "?? order ?? help ??", "intent": "fallback"},
-  {"text": "ehhh", "intent": "fallback"},
-  {"text": "uhhh", "intent": "fallback"},
-  {"text": "hmmm???", "intent": "fallback"},
-  {"text": "coke sprite water hmm", "intent": "fallback"},
-  {"text": "delivery order something", "intent": "fallback"},
-  {"text": "buy buy maybe", "intent": "fallback"},
-  {"text": "plz???", "intent": "fallback"},
-  {"text": "help????", "intent": "fallback"},
-  {"text": "??help??order??", "intent": "fallback"},
-  {"text": "dili ko kabalo", "intent": "fallback"},
-  {"text": "wala ko kasabot", "intent": "fallback"},
-  {"text": "ano gagawin ko", "intent": "fallback"},
-  {"text": "order something random", "intent": "fallback"},
-  {"text": "this is broken text", "intent": "fallback"},
-  {"text": "unknown input here", "intent": "fallback"},
-  {"text": "c0k3 ??? del1v3ry", "intent": "fallback"},
-  {"text": "s0m3th1ng wrong", "intent": "fallback"}
-
-
+  {
+    "text": "Pa-order Coke boss",
+    "intent": "order_item"
+  },
+  {
+    "text": "Gusto ko mo order ug Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want to order Royal",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want to order coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Gusto ko mu-order ug Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pa-order ko coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Mag-order ko Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "I would like to buy coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Palihug ko mo order ko Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pabili Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Order ko coke boss",
+    "intent": "order_item"
+  },
+  {
+    "text": "Naa pamo Coke?",
+    "intent": "order_item"
+  },
+  {
+    "text": "Meron pa kayong coke?",
+    "intent": "order_item"
+  },
+  {
+    "text": "ordr coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "coke pls",
+    "intent": "order_item"
+  },
+  {
+    "text": "Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Royal",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pwede mag order coke?",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want Coke 1 bottle",
+    "intent": "order_item"
+  },
+  {
+    "text": "Order 1 case Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pa-order Sprite",
+    "intent": "order_item"
+  },
+  {
+    "text": "Gusto ko Pepsi",
+    "intent": "order_item"
+  },
+  {
+    "text": "Add Coke to my order",
+    "intent": "order_item"
+  },
+  {
+    "text": "I need Royal drinks",
+    "intent": "order_item"
+  },
+  {
+    "text": "Order Coke and Sprite",
+    "intent": "order_item"
+  },
+  {
+    "text": "Buy Coke please",
+    "intent": "order_item"
+  },
+  {
+    "text": "I’ll take Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Can I get Coke bottle",
+    "intent": "order_item"
+  },
+  {
+    "text": "Order 2 Coke bottles please",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pa deliver Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Coke order pls boss",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want drinks order Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want Sprite and Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pa-order 2 Coke and 1 Sprite",
+    "intent": "order_item"
+  },
+  {
+    "text": "Gusto ko Pepsi ug Royal",
+    "intent": "order_item"
+  },
+  {
+    "text": "Order me drinks",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want beverages please",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pa-order drinks boss",
+    "intent": "order_item"
+  },
+  {
+    "text": "Take my order: Coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "I’ll order 1 Coke and 1 Royal",
+    "intent": "order_item"
+  },
+  {
+    "text": "Add Sprite and Pepsi to my order",
+    "intent": "order_item"
+  },
+  {
+    "text": "Coke please deliver",
+    "intent": "order_item"
+  },
+  {
+    "text": "coke lang",
+    "intent": "order_item"
+  },
+  {
+    "text": "just coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "one coke pls boss",
+    "intent": "order_item"
+  },
+  {
+    "text": "2 coke ok",
+    "intent": "order_item"
+  },
+  {
+    "text": "coke and sprite lang",
+    "intent": "order_item"
+  },
+  {
+    "text": "order lang ko",
+    "intent": "order_item"
+  },
+  {
+    "text": "pa order lang boss",
+    "intent": "order_item"
+  },
+  {
+    "text": "gusto ko ani coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "kani coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "this coke pls",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want Coke pero pila delivery?",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pa-order Coke, unsa payment method?",
+    "intent": "order_item"
+  },
+  {
+    "text": "Order Sprite, how much total?",
+    "intent": "order_item"
+  },
+  {
+    "text": "Gusto ko Coke, deliver Cebu City",
+    "intent": "order_item"
+  },
+  {
+    "text": "I want Pepsi, COD ba?",
+    "intent": "order_item"
+  },
+  {
+    "text": "Pa-order Coke, how long delivery?",
+    "intent": "order_item"
+  },
+  {
+    "text": "Order Coke ug Sprite, pila tanan?",
+    "intent": "order_item"
+  },
+  {
+    "text": "I need Coke, cash or GCash?",
+    "intent": "order_item"
+  },
+  {
+    "text": "c0ke pls",
+    "intent": "order_item"
+  },
+  {
+    "text": "koke",
+    "intent": "order_item"
+  },
+  {
+    "text": "cokee",
+    "intent": "order_item"
+  },
+  {
+    "text": "sprte pls",
+    "intent": "order_item"
+  },
+  {
+    "text": "pepsi plz",
+    "intent": "order_item"
+  },
+  {
+    "text": "orderr coke",
+    "intent": "order_item"
+  },
+  {
+    "text": "cokeeee boss",
+    "intent": "order_item"
+  },
+  {
+    "text": "Who is the president of the Philippines?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Tell me a joke",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is AI?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "How to hack a WiFi?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the capital of Japan?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Can you sing a song?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Are you a human?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Sino si Spider-Man?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Ano ang love?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Pwede ka ba maging boyfriend?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Ano ang 1+1?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Gusto ko mag kwento",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Kinsa si Messi?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Unsa ang meaning sa life?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Pwede ka mo kanta?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Asa si Taylor Swift karon?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Ngano pula ang langit?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Explain quantum physics",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Who won NBA finals",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Make me a website code",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Tell me history of Japan",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Solve this math equation",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Who is Elon Musk",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Write a poem",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is cryptocurrency",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "How does hacking work?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is machine learning",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the weather today?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Can you tell me a joke?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Who won the World Cup?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Tell me about Bitcoin",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is your favorite movie?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "How do I cook rice?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Do you know Taylor Swift?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What time is it in New York?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Explain how airplanes fly",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the meaning of life?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the weather today?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Tell me a story",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Who won the World Cup?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "How do I make a cake?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Do you know Python programming?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the best movie?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "How many stars are there?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the capital of France?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Who invented the internet?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Can you recommend a song?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the weather today?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Tell me a story",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Who won the World Cup?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "How do I make a cake?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Do you know Python programming?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the best movie?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "How many stars are there?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "What is the capital of France?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Who invented the internet?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Can you recommend a song?",
+    "intent": "out_of_scope"
+  },
+  {
+    "text": "Do you have water?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you sell Coke?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What products do you have?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have snacks?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Is Coke available?",
+    "intent": "business_info"
+  },
+  {
+    "text": "May tubig ba kayo?",
+    "intent": "business_info"
+  },
+  {
+    "text": "May Coke ba kayo?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Ano ang mga tinda ninyo?",
+    "intent": "business_info"
+  },
+  {
+    "text": "May snacks ba kayo?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Available ba ang Royal?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Naa moy tubig?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Naa moy Coke?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Unsay available ninyo?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Naa moy snacks?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Available ba ang gatas?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you sell discounts?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have snacks and drinks?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What hours are you open today?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have delivery service?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Can I order from outside Cebu?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have a minimum order amount?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What is your store location?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have bulk items?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What is your delivery area?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you accept orders for events?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have delivery?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Where are you located?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What time are you open?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you deliver in Cebu?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Store hours?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Are you open today?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Add 4 more bottles",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Increase my order by 3",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add one more Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Please add two more drinks",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Do you sell snacks and drinks?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Are there discounts available?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What hours are you open today?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you accept bulk orders?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Can I order from outside Cebu?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What is your delivery area?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have any promos right now?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Is there a minimum purchase amount?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Where is your store located?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you deliver to nearby towns?",
+    "intent": "business_info"
+  },
+  {
+    "text": "I need 5 total",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Make it 4 bottles of Pepsi",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "I want to add 3 more",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add extra 2 Royal",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add 2 more to my order",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add another Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add 4 more bottles to my order",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Increase my order by three",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add one more Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Please add two more drinks",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Do you sell cold drinks?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Are there discounts available?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What hours are you open today?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you accept bulk orders?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Can I order from outside Cebu?",
+    "intent": "business_info"
+  },
+  {
+    "text": "What is your delivery area?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you have any promos right now?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Is there a minimum purchase amount?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Where is your store located?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you deliver to nearby towns?",
+    "intent": "business_info"
+  },
+  {
+    "text": "I need five total now",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Make it four bottles instead",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add extra two Royals",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add another Coke please",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add more to the existing order",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Change quantity to four bottles",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add 4 more bottles to my order",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Increase my order by three",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add one more Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Please add two more drinks",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "I need five total now",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Make it four bottles instead",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add extra two Royals",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add another Coke please",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add more to the existing order",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Change quantity to four bottles",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Do you have minimum order?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Is there delivery fee?",
+    "intent": "business_info"
+  },
+  {
+    "text": "How to order from you?",
+    "intent": "business_info"
+  },
+  {
+    "text": "Do you accept bulk orders?",
+    "intent": "business_info"
+  },
+  {
+    "text": "2 Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add 2 bottles of Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Make it 3 bottles",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add 3 bottles",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "I want 2 Coke and 3 Royal",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Dalawa lang",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Magdagdag ng 2 na Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Gawing 3 bote",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Pahingi ng 2 Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Duha lang",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Duha ka Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Lima lang ka case",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Pwede 10 ka case",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Idugang 2 ka Coke ug 3 ka Royal",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add 2 more Coke",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Add 3 more bottles",
+    "intent": "add_quantity"
+  },
+  {
+    "text": "Change my order to Royal",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Replace Coke with Royal",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Change my drink",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Can I modify my order?",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Update my order to Pepsi",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Switch Coke to Sprite",
+    "intent": "modify_order"
+  },
+  {
+    "text": "I want to change my order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Make it Royal instead",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Can you change my item?",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Replace it with water",
+    "intent": "modify_order"
+  },
+  {
+    "text": "I changed my mind, update order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Modify my purchase",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Pwede palitan ang order ko?",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Palitan mo ng Royal ang Coke ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Gusto ko baguhin ang order ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Palitan ang inorder ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Gawing Sprite ang Coke",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Pwede bang baguhin ang order?",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Palitan mo ng tubig ang order ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "I-update ang order ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Baguhin ang binili ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Palitan ng Pepsi ang order ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Nagbago ang isip ko, palitan mo",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Ayusin ang order ko",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Pwede ilisan akong order?",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Ilisi ang Coke og Royal",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Usba akong order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Gusto ko ilisan akong gi-order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "I-change akong order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Pwede ba usbon akong order?",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Ilisi ug Sprite ang Coke",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Usba ang akong order ngadto Pepsi",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Bag-o ang akong gi-desire, ilisi",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Palihog usba akong order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Ilisi ang item sa order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Gusto ko mausab akong order",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Change Coke to Royal pls",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Pwede ilisan Coke to Sprite",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Make it Pepsi instead",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Ilisi to water instead",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Change my order pls",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Usba to Royal",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Palitan to Coke",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Switch it to Sprite",
+    "intent": "modify_order"
+  },
+  {
+    "text": "Here is my address",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my house",
+    "intent": "provide_address"
+  },
+  {
+    "text": "My address is Cebu City",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to this location",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my location",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ship it to my house",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Here is my delivery address",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Please deliver here",
+    "intent": "provide_address"
+  },
+  {
+    "text": "This is my address",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ito ang address ko",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I-deliver sa bahay ko",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Sa Cebu City ang address ko",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ipadala dito sa address na ito",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ito delivery address ko",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Dito mo ipadala",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Sa bahay ko i-deliver",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ito ang location ko",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver sa Poblacion",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ani akong address",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I-deliver diri sa akong balay",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Sa Cebu City ko gapuyo",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ani ang akong location",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Diri lang i-deliver",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Sa akong house i-deliver",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ani ang delivery address",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Poblacion area ko",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver sa Poblacion area",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Here is my address sa Cebu",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I-deliver to my house pls",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ani address ko: Cebu City",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it here Poblacion",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Diri ko sa Cebu City",
+    "intent": "provide_address"
+  },
+  {
+    "text": "This is my location Poblacion",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to 123 Main Street",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ship to my office at Ayala",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I live at 45 Mabini St",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to 10 Cebu City",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my house in Talamban",
+    "intent": "provide_address"
+  },
+  {
+    "text": "This is my delivery location",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I am at Banilad, deliver there",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to Brgy. 18",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Brgy. Palanas lang ihatud",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ihatud sa Brgy. Labangon",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Hatud diri sa barangay",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to barangay Palanas",
+    "intent": "provide_address"
+  },
+  {
+    "text": "This location is my address",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Address: 10th floor, Cebu Tower",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my home near the mall",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to 123 Mabini Street",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ship to my office in Ayala",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I live at 45 Lopez St",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to 10 Cebu City",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my house in Talamban",
+    "intent": "provide_address"
+  },
+  {
+    "text": "This is my delivery location",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I am at Banilad, deliver there",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to Brgy. 18",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Address: 10th floor, Cebu Tower",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my home near the mall",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to 123 Mabini Street",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Ship to my office in Ayala",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I live at 45 Lopez St",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to 10 Cebu City",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my house in Talamban",
+    "intent": "provide_address"
+  },
+  {
+    "text": "This is my delivery location",
+    "intent": "provide_address"
+  },
+  {
+    "text": "I am at Banilad, deliver there",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Send it to Brgy. 18",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Address: 10th floor, Cebu Tower",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Deliver to my home near the mall",
+    "intent": "provide_address"
+  },
+  {
+    "text": "Here is my number 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My contact number is 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "You can reach me at this number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Here is my phone number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "This is my contact info",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Call me at 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My number is 09981234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Contact me here",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Ito ang number ko 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Maaari mo akong tawagan sa 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Ito ang contact number ko",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Ito ang cellphone ko",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Tawagan mo ako sa numerong ito",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Contact number ko ay 09981234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Ito ang number ko para sa order",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Mao ni akong contact number 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Tawagi ko ani nga number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Ani akong cellphone number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Pwede ko tawagan ani 09981234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Contact number nako ni",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Ani akong number para sa order",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "I-contact ko ani nga number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Here is my number 09123456789 lang",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Mao ni akong number 09981234567 pls",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Contact me here 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Ani akong number for delivery",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Call me here lang 09123456789",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Mao ni contact ko Cebu",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My phone is 09451234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Contact me on 09231234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Call me at 09331234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Text me at 09441234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Use 09161234567 for contact",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "I can be reached at 09551234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My number is 09771234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Here is my mobile number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Send confirmation to 09651234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Reach me at this contact number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My mobile is 09481234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Call me at 09581234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "I can be reached at 09681234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Text me on 09781234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Use 09181234567 to contact me",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My phone number is 09381234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Send message to 09281234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Here is my contact number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Contact me at 09981234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Reach me at 09881234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My mobile is 09481234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Call me at 09581234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "I can be reached at 09681234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Text me on 09781234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Use 09181234567 to contact me",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "My phone number is 09381234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Send message to 09281234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Here is my contact number",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Contact me at 09981234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "Reach me at 09881234567",
+    "intent": "provide_contact"
+  },
+  {
+    "text": "How long is the delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How many minutes does delivery take?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "What is the delivery time?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How fast is your delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "When will my order arrive?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Estimated delivery time?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How soon can you deliver?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How long will it take?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Gaano katagal ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Ilang minuto ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Kailan darating ang order ko?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Gaano kabilis ang delivery ninyo?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Ano ang delivery time?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Tagal ng delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Gaano katagal bago dumating?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Pila ka minutes ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Unsa ka dugay ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Kanus-a maabot akong order?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Paspas ba inyong delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Pila ka oras ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Unsa kadugay mo deliver?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Tagal sa delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How long delivery sa Cebu?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Pila ka minutes delivery ninyo?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "When maabot ang order ko?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Gaano katagal delivery here?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Unsa ka dugay delivery pls",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How fast inyong delivery service?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Okay",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Yes",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Yes proceed",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Go ahead",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sure",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Alright",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Proceed",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Yes please",
+    "intent": "confirmation"
+  },
+  {
+    "text": "That’s fine",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Confirm it",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Oo",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige go",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Okay lang",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige tuloy",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige approve",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Oo pwede",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige na",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Okay na yan",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige go",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Oo",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige ra",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Okay ra",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Tuloy lang",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige proceed",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Pwede ra",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige lang",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Go ahead lang",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Okay go lang",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige proceed na",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Yes go ahead",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige ra continue",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Okay na, proceed",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Oo go lang",
+    "intent": "confirmation"
+  },
+  {
+    "text": "Sige okay",
+    "intent": "confirmation"
+  },
+  {
+    "text": "No thanks",
+    "intent": "rejection"
+  },
+  {
+    "text": "No",
+    "intent": "rejection"
+  },
+  {
+    "text": "Nope",
+    "intent": "rejection"
+  },
+  {
+    "text": "Not now",
+    "intent": "rejection"
+  },
+  {
+    "text": "I don’t want it",
+    "intent": "rejection"
+  },
+  {
+    "text": "Cancel it",
+    "intent": "rejection"
+  },
+  {
+    "text": "No I changed my mind",
+    "intent": "rejection"
+  },
+  {
+    "text": "Stop",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayaw ko",
+    "intent": "rejection"
+  },
+  {
+    "text": "Hindi",
+    "intent": "rejection"
+  },
+  {
+    "text": "Huwag na",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayaw nalang",
+    "intent": "rejection"
+  },
+  {
+    "text": "Hindi na lang",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayoko yan",
+    "intent": "rejection"
+  },
+  {
+    "text": "I-cancel mo",
+    "intent": "rejection"
+  },
+  {
+    "text": "Pass ako",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayaw nalang",
+    "intent": "rejection"
+  },
+  {
+    "text": "Dili",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayaw ko ana",
+    "intent": "rejection"
+  },
+  {
+    "text": "Pass lang",
+    "intent": "rejection"
+  },
+  {
+    "text": "Dili na lang",
+    "intent": "rejection"
+  },
+  {
+    "text": "Wala na",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayaw na",
+    "intent": "rejection"
+  },
+  {
+    "text": "Cancel nalang",
+    "intent": "rejection"
+  },
+  {
+    "text": "No thanks lang",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayaw nalang proceed",
+    "intent": "rejection"
+  },
+  {
+    "text": "Nope cancel it",
+    "intent": "rejection"
+  },
+  {
+    "text": "Dili nalang ko",
+    "intent": "rejection"
+  },
+  {
+    "text": "How much for 2 bottles of Sprite?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "What does two Royal cost?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much if I buy 5 Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Price for delivery?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much to ship to Cebu?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much is the order total?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much for a case of Pepsi?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila ang 2 Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano sa isang six-pack?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ang total price?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much is two bottles of Sprite?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "What does two Royal cost?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much if I buy five Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much does delivery cost?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much is a case of Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano sa dalawang Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ang single bottle price?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila ang tulo ka Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much ang total bill?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much for one case of Pepsi?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much is two bottles of Sprite?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "What does two Royal cost?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much if I buy five Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much does delivery cost?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much is a case of Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano sa dalawang Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ang single bottle price?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila ang tulo ka Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much ang total bill?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much for one case of Pepsi?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Stop na lang",
+    "intent": "rejection"
+  },
+  {
+    "text": "Hindi na lang pala",
+    "intent": "rejection"
+  },
+  {
+    "text": "Ayaw ko ana pls",
+    "intent": "rejection"
+  },
+  {
+    "text": "How much is Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much for Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "What is the price of Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much does Coke cost?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Price of Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much is one Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much per Coke bottle?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano ang Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano po ang Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Ano ang presyo ng Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano isa Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much ang Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Presyo ng Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila ang Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Unsay presyo sa Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ni boss Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila ni?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ka isa Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Hm Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ang isa ka Coke bottle?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much Coke boss?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ni Coke boss?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Hm Coke lang?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila Coke sa inyo?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano Coke here?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ang Coke ngayon?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "How much ni Coke sa Cebu?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Hello",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hi",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hey",
+    "intent": "greeting"
+  },
+  {
+    "text": "Good morning",
+    "intent": "greeting"
+  },
+  {
+    "text": "Good afternoon",
+    "intent": "greeting"
+  },
+  {
+    "text": "Good evening",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hi there",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hello there",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hey boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Kumusta",
+    "intent": "greeting"
+  },
+  {
+    "text": "Kamusta ka",
+    "intent": "greeting"
+  },
+  {
+    "text": "Magandang umaga",
+    "intent": "greeting"
+  },
+  {
+    "text": "Magandang tanghali",
+    "intent": "greeting"
+  },
+  {
+    "text": "Magandang hapon",
+    "intent": "greeting"
+  },
+  {
+    "text": "Magandang gabi",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hi po",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hello po",
+    "intent": "greeting"
+  },
+  {
+    "text": "Uy",
+    "intent": "greeting"
+  },
+  {
+    "text": "Maayong adlaw",
+    "intent": "greeting"
+  },
+  {
+    "text": "Maayong buntag",
+    "intent": "greeting"
+  },
+  {
+    "text": "Maayong hapon",
+    "intent": "greeting"
+  },
+  {
+    "text": "Maayong gabii",
+    "intent": "greeting"
+  },
+  {
+    "text": "Kumusta",
+    "intent": "greeting"
+  },
+  {
+    "text": "Kamusta boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hi boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hello boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Oy",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hi boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hello boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Maayong adlaw boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Kamusta boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hey boss good morning",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hi po good morning",
+    "intent": "greeting"
+  },
+  {
+    "text": "Hello maayong adlaw",
+    "intent": "greeting"
+  },
+  {
+    "text": "Uy boss",
+    "intent": "greeting"
+  },
+  {
+    "text": "Can I pay via GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "What payment methods do you accept?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Cash or GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept online payment?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay online?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is cash on delivery available?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept PayMaya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Pwede GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Tumatanggap ba kayo ng GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Ano ang payment options?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Cash o GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay with card?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept debit cards?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is PayPal allowed?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay cash on delivery?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I use bank transfer?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you have stock of Pepsi?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is the Royal still available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Any Coke bottles left?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Can I get Sprite now?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is there Pepsi in stock?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have water available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have milk?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Any availability for Coke Zero?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Are there still bottles of Sprite?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is your stock full for Coke?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you accept coins?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay using a mobile wallet?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you have credit card payment?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "How can I pay online?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I use GCash or PayMaya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay by credit card?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "maya pwede?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "pwede ba magbayad gamit ang Maya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "can I pay gamit ang Maya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "GCash lang",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay with Maya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept cash on delivery?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept debit cards?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is PayPal allowed?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay cash on delivery?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you take GCash and PayMaya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is Coke in stock right now?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have Sprite available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Any Royal bottles left?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Can I still get Pepsi?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is water still available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have milk today?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is Coke Zero available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Are there drinks left?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have stock of drinks?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is the item available now?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Can I use a mobile wallet?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept online bank payment?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is card payment possible?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay with cash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Which payment options do you have?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay by credit card?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept debit cards?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is PayPal allowed?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay cash on delivery?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you take GCash and PayMaya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is Coke in stock right now?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have Sprite available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Any Royal bottles left?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Can I still get Pepsi?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is water still available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have milk today?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is Coke Zero available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Are there drinks left?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have stock of drinks?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is the item available now?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Can I use a mobile wallet?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept online bank payment?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Is card payment possible?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Can I pay with cash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Which payment options do you have?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Pwede bang online payment?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "May cash on delivery ba?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Pwede ba PayMaya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Ano mga pwedeng bayad?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Pwede GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Tanggap mo GCash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Unsay payment options ninyo?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Cash or GCash ba?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Pwede online payment?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Naa bay COD?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Pwede PayMaya?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Unsa pwede bayad?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "gcash",
+    "intent": "payment_method"
+  },
+  {
+    "text": "GCash pwede?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Cash or gcash lang?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Pwede GCash or cash?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you accept gcash boss?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Cash on delivery pwede?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Online payment like GCash okay?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Maya or gcash accepted?",
+    "intent": "payment_method"
+  },
+  {
+    "text": "Do you have Pepsi?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is Coke available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have Sprite?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "What drinks are available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is Royal available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "May Pepsi ba kayo?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Meron bang Coke?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Available ba ang Sprite?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Ano ang available na drinks?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "May stock pa ba ng Coke?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Naay Pepsi?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Naay Coke?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Naay Sprite available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Unsa nga drinks ang available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Naa pa ba stock sa Royal?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have Coke pa?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Available pa ba Pepsi ninyo?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Naay stock pa ba Sprite?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Is Coke still available ba?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Unsa pa available drinks ninyo?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "May Coke pa ba kayo available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Do you have pa Sprite?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Naay Pepsi or Coke available?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Available pa ba ang drinks ninyo?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Pwede pa maka-order Coke, available pa?",
+    "intent": "check_availability"
+  },
+  {
+    "text": "Unsaon pag order",
+    "intent": "help"
+  },
+  {
+    "text": "How to order?",
+    "intent": "help"
+  },
+  {
+    "text": "Stop and cancel my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Don’t send my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Please cancel the order right now",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I changed my mind, cancel it",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel the order before delivery",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I want to stop my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Huwag nang ituloy ang order ko",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Bawal na ang order ko",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel na ang transaction",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Tapos na, huwag na ipadala",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Please cancel my current order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel this order now",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Do not deliver my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Stop the order from being processed",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I want to cancel my purchase",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel my order immediately",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Do not send my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Wag na ipadala ang order ko",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Put the order on cancel",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I changed my mind, cancel the order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Please cancel this order for me",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel the order and refund",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Stop my delivery",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Do not fulfill my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel this booking",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I no longer want this order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel everything",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Abort my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Wag na ipadala ang order ko",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I don’t want the order anymore",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Paano umorder?",
+    "intent": "help"
+  },
+  {
+    "text": "Unsaon pag cancel ang order?",
+    "intent": "help"
+  },
+  {
+    "text": "How to cancel order?",
+    "intent": "help"
+  },
+  {
+    "text": "How does this work?",
+    "intent": "help"
+  },
+  {
+    "text": "Tell me about your menu",
+    "intent": "help"
+  },
+  {
+    "text": "Pahingi ng menu",
+    "intent": "help"
+  },
+  {
+    "text": "I need help",
+    "intent": "help"
+  },
+  {
+    "text": "Tabangi ko",
+    "intent": "help"
+  },
+  {
+    "text": "Unsay menu ninyo?",
+    "intent": "help"
+  },
+  {
+    "text": "What can I order here?",
+    "intent": "help"
+  },
+  {
+    "text": "Pwede ko mangutana?",
+    "intent": "help"
+  },
+  {
+    "text": "Pwede ba naku ma cancel ang order anytime?",
+    "intent": "help"
+  },
+  {
+    "text": "How do I place an order here?",
+    "intent": "help"
+  },
+  {
+    "text": "Giunsa pag order diri?",
+    "intent": "help"
+  },
+  {
+    "text": "Paano mag-order dito?",
+    "intent": "help"
+  },
+  {
+    "text": "Can you teach me how to order?",
+    "intent": "help"
+  },
+  {
+    "text": "Unsaon pag place order?",
+    "intent": "help"
+  },
+  {
+    "text": "How do I use this system?",
+    "intent": "help"
+  },
+  {
+    "text": "Giunsa ni siya pag gamit?",
+    "intent": "help"
+  },
+  {
+    "text": "Paano gamitin ito?",
+    "intent": "help"
+  },
+  {
+    "text": "Unsay process ani?",
+    "intent": "help"
+  },
+  {
+    "text": "How does ordering work here?",
+    "intent": "help"
+  },
+  {
+    "text": "Can I cancel my order?",
+    "intent": "help"
+  },
+  {
+    "text": "Pwede ba nako i-cancel akong order?",
+    "intent": "help"
+  },
+  {
+    "text": "Maaari ko bang i-cancel ang order ko?",
+    "intent": "help"
+  },
+  {
+    "text": "Giunsa pag cancel sa order?",
+    "intent": "help"
+  },
+  {
+    "text": "Show me your menu please",
+    "intent": "help"
+  },
+  {
+    "text": "Ipakita ang menu ninyo",
+    "intent": "help"
+  },
+  {
+    "text": "Pakita menu ninyo",
+    "intent": "help"
+  },
+  {
+    "text": "Unsay available sa menu?",
+    "intent": "help"
+  },
+  {
+    "text": "I don’t know how to order",
+    "intent": "help"
+  },
+  {
+    "text": "Wala ko kabalo unsaon pag order",
+    "intent": "help"
+  },
+  {
+    "text": "Hindi ko alam paano umorder",
+    "intent": "help"
+  },
+  {
+    "text": "Can you assist me?",
+    "intent": "help"
+  },
+  {
+    "text": "Pwede ko nimo tabangan?",
+    "intent": "help"
+  },
+  {
+    "text": "Pwede mo ko tulungan?",
+    "intent": "help"
+  },
+  {
+    "text": "What should I do next?",
+    "intent": "help"
+  },
+  {
+    "text": "Unsa akong buhaton sunod?",
+    "intent": "help"
+  },
+  {
+    "text": "Ano susunod kong gagawin?",
+    "intent": "help"
+  },
+  {
+    "text": "Is there a guide for ordering?",
+    "intent": "help"
+  },
+  {
+    "text": "Naay guide sa pag order?",
+    "intent": "help"
+  },
+  {
+    "text": "May guide ba kayo paano umorder?",
+    "intent": "help"
+  },
+  {
+    "text": "Cancel my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I want to cancel",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Please cancel my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Ayaw nalang akong order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Unsaon pag cancel sa order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Gi-cancel nako akong order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Pwede i-cancel akong order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "I want to cancel my order please",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Can you cancel my order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel na akong order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Ayaw na dayon akong order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Wala na, i-cancel nalang akong order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Gusto ko i-cancel ang order ko",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Paki cancel po ng order ko",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Maaari bang i-cancel ang order ko?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Hindi ko na itutuloy ang order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Unsaon nako pag cancel ani nga order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "How do I cancel my order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Paano ko icacancel ang order ko?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Is it possible to cancel my order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel order ASAP",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Cancel it right now",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Ayaw na ni ipadayon akong order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Stop my order",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Please stop my order process",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Giunsa pag cancel ang akong order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Pwede pa ba nako i-cancel akong order?",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Wala na ko ganahi, cancel nalang",
+    "intent": "cancel_order"
+  },
+  {
+    "text": "Where is my delivery now?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Has my order left the store?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order already shipped?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Can I track my order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Where is my order at the moment?",
+    "intent": "order_status"
+  },
+  {
+    "text": "What is the status of my order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my package on the way?",
+    "intent": "order_status"
+  },
+  {
+    "text": "When will the order arrive?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Anong nangyari sa order ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Nasaan na ang order ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order on its way?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Where is my package now?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Has my order been shipped?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Check the status of my order",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order already out for delivery?",
+    "intent": "order_status"
+  },
+  {
+    "text": "When will my order be here?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Any update on my order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Has delivery started?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Track my order please",
+    "intent": "order_status"
+  },
+  {
+    "text": "Where is the order now?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order on its way?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Where is my package now?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Has my order been shipped?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Check the status of my order",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order already out for delivery?",
+    "intent": "order_status"
+  },
+  {
+    "text": "When will my order be here?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Any update on my order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Has delivery started?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Track my order please",
+    "intent": "order_status"
+  },
+  {
+    "text": "Where is the order now?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Order status please",
+    "intent": "order_status"
+  },
+  {
+    "text": "Where is my order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Track my order",
+    "intent": "order_status"
+  },
+  {
+    "text": "When will my order arrive?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order on the way?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Delivery status",
+    "intent": "order_status"
+  },
+  {
+    "text": "Asa na dapit akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Asa na akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Na deliver na ba akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Na process na akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Giunsa na akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Saan na ang order ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Nasa na ba ang order ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Kailan darating ang order ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Naipadala na ba ang order ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Nasaan na ang delivery ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Can you track my order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Please check my order status",
+    "intent": "order_status"
+  },
+  {
+    "text": "Update on my order please",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order ready?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order already shipped?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Na deliver na ba?",
+    "intent": "order_status"
+  },
+  {
+    "text": "On the way na ba ang order ko?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Asa na gid ang akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Pwede ma track akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "When will it arrive?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Kanus-a muabot akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Kailan ma-deliver?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Is my order still processing?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Naa pa ba sa process akong order?",
+    "intent": "order_status"
+  },
+  {
+    "text": "Slow delivery",
+    "intent": "complaint"
+  },
+  {
+    "text": "Dugay kaayo ang order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Wrong item delivered",
+    "intent": "complaint"
+  },
+  {
+    "text": "Na wrong akong order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Not satisfied",
+    "intent": "complaint"
+  },
+  {
+    "text": "Delivery is too slow",
+    "intent": "complaint"
+  },
+  {
+    "text": "Very late ang delivery",
+    "intent": "complaint"
+  },
+  {
+    "text": "Dugay kaayo moabot ang order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Na delay akong order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Order arrived late",
+    "intent": "complaint"
+  },
+  {
+    "text": "I received the wrong item",
+    "intent": "complaint"
+  },
+  {
+    "text": "Wrong product ang nadawat nako",
+    "intent": "complaint"
+  },
+  {
+    "text": "Sayop ang gi-deliver",
+    "intent": "complaint"
+  },
+  {
+    "text": "Na wrong item naabot",
+    "intent": "complaint"
+  },
+  {
+    "text": "Incorrect order delivered",
+    "intent": "complaint"
+  },
+  {
+    "text": "My order is incomplete",
+    "intent": "complaint"
+  },
+  {
+    "text": "Kulangan ang order ko",
+    "intent": "complaint"
+  },
+  {
+    "text": "Missing items in my order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Naay kulang sa akong order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Bad service",
+    "intent": "complaint"
+  },
+  {
+    "text": "Poor service",
+    "intent": "complaint"
+  },
+  {
+    "text": "Dili tarong ang service",
+    "intent": "complaint"
+  },
+  {
+    "text": "Way ayo ang service",
+    "intent": "complaint"
+  },
+  {
+    "text": "I am not happy with my order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Dili ko satisfied sa order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Wala ko nalipay sa akong order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Hindi ako satisfied",
+    "intent": "complaint"
+  },
+  {
+    "text": "The drink is spilled",
+    "intent": "complaint"
+  },
+  {
+    "text": "Natagak ang Coke",
+    "intent": "complaint"
+  },
+  {
+    "text": "Leaked ang bottle",
+    "intent": "complaint"
+  },
+  {
+    "text": "My order is damaged",
+    "intent": "complaint"
+  },
+  {
+    "text": "Guba ang nadawat nako",
+    "intent": "complaint"
+  },
+  {
+    "text": "Broken item delivered",
+    "intent": "complaint"
+  },
+  {
+    "text": "Driver was rude",
+    "intent": "complaint"
+  },
+  {
+    "text": "Masungit ang nag deliver",
+    "intent": "complaint"
+  },
+  {
+    "text": "Dili tarong ang delivery rider",
+    "intent": "complaint"
+  },
+  {
+    "text": "Order not correct",
+    "intent": "complaint"
+  },
+  {
+    "text": "Sayop ang order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Wrong order received",
+    "intent": "complaint"
+  },
+  {
+    "text": "Took too long to deliver",
+    "intent": "complaint"
+  },
+  {
+    "text": "Grabe ka dugay ang delivery",
+    "intent": "complaint"
+  },
+  {
+    "text": "Super delayed ang order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Hindi tama ang order ko",
+    "intent": "complaint"
+  },
+  {
+    "text": "Mali ang delivery",
+    "intent": "complaint"
+  },
+  {
+    "text": "Hindi ito ang inorder ko",
+    "intent": "complaint"
+  },
+  {
+    "text": "Unsatisfactory experience",
+    "intent": "complaint"
+  },
+  {
+    "text": "Dili maayo akong experience",
+    "intent": "complaint"
+  },
+  {
+    "text": "Bad experience sa order",
+    "intent": "complaint"
+  },
+  {
+    "text": "Thank you",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks boss",
+    "intent": "thanks"
+  },
+  {
+    "text": "Daghang salamat",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thank you so much",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks a lot",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thank you very much",
+    "intent": "thanks"
+  },
+  {
+    "text": "Maraming salamat",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat kaayo",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks po",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat po",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat boss",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks kaayo boss",
+    "intent": "thanks"
+  },
+  {
+    "text": "Appreciate it",
+    "intent": "thanks"
+  },
+  {
+    "text": "I appreciate it",
+    "intent": "thanks"
+  },
+  {
+    "text": "Much appreciated",
+    "intent": "thanks"
+  },
+  {
+    "text": "Really appreciate it",
+    "intent": "thanks"
+  },
+  {
+    "text": "Okay thank you",
+    "intent": "thanks"
+  },
+  {
+    "text": "Alright thanks",
+    "intent": "thanks"
+  },
+  {
+    "text": "Sige salamat",
+    "intent": "thanks"
+  },
+  {
+    "text": "Okay salamat",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks for your help",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat sa tabang",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat sa assistance",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thank you for assisting me",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks for the order",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat sa order",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks sa delivery",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat sa pag deliver",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks mate",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks friend",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thank you sir",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thank you maam",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat gyud",
+    "intent": "thanks"
+  },
+  {
+    "text": "Daghang salamat kaayo",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat kaayo boss",
+    "intent": "thanks"
+  },
+  {
+    "text": "Dako nga salamat",
+    "intent": "thanks"
+  },
+  {
+    "text": "Many thanks",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thanks again",
+    "intent": "thanks"
+  },
+  {
+    "text": "Thank you again",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat balik",
+    "intent": "thanks"
+  },
+  {
+    "text": "That’s all thank you",
+    "intent": "thanks"
+  },
+  {
+    "text": "Okay thanks done",
+    "intent": "thanks"
+  },
+  {
+    "text": "Salamat, okay na",
+    "intent": "thanks"
+  },
+  {
+    "text": "asdasdasd",
+    "intent": "fallback"
+  },
+  {
+    "text": "???",
+    "intent": "fallback"
+  },
+  {
+    "text": "random text",
+    "intent": "fallback"
+  },
+  {
+    "text": "qwerty",
+    "intent": "fallback"
+  },
+  {
+    "text": "zxcvbnm",
+    "intent": "fallback"
+  },
+  {
+    "text": "....",
+    "intent": "fallback"
+  },
+  {
+    "text": "???!!!",
+    "intent": "fallback"
+  },
+  {
+    "text": "123456",
+    "intent": "fallback"
+  },
+  {
+    "text": "huh",
+    "intent": "fallback"
+  },
+  {
+    "text": "whattt",
+    "intent": "fallback"
+  },
+  {
+    "text": "idk",
+    "intent": "fallback"
+  },
+  {
+    "text": "??? coke ???",
+    "intent": "fallback"
+  },
+  {
+    "text": "order???",
+    "intent": "fallback"
+  },
+  {
+    "text": "coke delivery??? what",
+    "intent": "fallback"
+  },
+  {
+    "text": "huh unsa ni",
+    "intent": "fallback"
+  },
+  {
+    "text": "unsa???",
+    "intent": "fallback"
+  },
+  {
+    "text": "ano to",
+    "intent": "fallback"
+  },
+  {
+    "text": "what is dis",
+    "intent": "fallback"
+  },
+  {
+    "text": "p0r3g4",
+    "intent": "fallback"
+  },
+  {
+    "text": "lkjhgfdsa",
+    "intent": "fallback"
+  },
+  {
+    "text": "asdfgh coke",
+    "intent": "fallback"
+  },
+  {
+    "text": "order.... maybe",
+    "intent": "fallback"
+  },
+  {
+    "text": "i dont know???",
+    "intent": "fallback"
+  },
+  {
+    "text": "?? order ?? help ??",
+    "intent": "fallback"
+  },
+  {
+    "text": "ehhh",
+    "intent": "fallback"
+  },
+  {
+    "text": "uhhh",
+    "intent": "fallback"
+  },
+  {
+    "text": "hmmm???",
+    "intent": "fallback"
+  },
+  {
+    "text": "coke sprite water hmm",
+    "intent": "fallback"
+  },
+  {
+    "text": "delivery order something",
+    "intent": "fallback"
+  },
+  {
+    "text": "buy buy maybe",
+    "intent": "fallback"
+  },
+  {
+    "text": "plz???",
+    "intent": "fallback"
+  },
+  {
+    "text": "help????",
+    "intent": "fallback"
+  },
+  {
+    "text": "??help??order??",
+    "intent": "fallback"
+  },
+  {
+    "text": "dili ko kabalo",
+    "intent": "fallback"
+  },
+  {
+    "text": "wala ko kasabot",
+    "intent": "fallback"
+  },
+  {
+    "text": "ano gagawin ko",
+    "intent": "fallback"
+  },
+  {
+    "text": "order something random",
+    "intent": "fallback"
+  },
+  {
+    "text": "this is broken text",
+    "intent": "fallback"
+  },
+  {
+    "text": "unknown input here",
+    "intent": "fallback"
+  },
+  {
+    "text": "c0k3 ??? del1v3ry",
+    "intent": "fallback"
+  },
+  {
+    "text": "s0m3th1ng wrong",
+    "intent": "fallback"
+  }
 ]

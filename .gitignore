@@ -10,8 +10,10 @@ __pycache__/
 # Training outputs
 results/
 checkpoint-*/
-model/
-intent_model/
+AI_Chatbot/model/results/
+AI_Chatbot/model/checkpoint-*/
+AI_Chatbot/model/model/
+AI_Chatbot/model/intent_model/
 
 # VS Code
 .vscode/
