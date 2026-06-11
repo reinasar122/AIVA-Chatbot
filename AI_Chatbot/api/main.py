@@ -134,6 +134,63 @@ PRICE_INTENT_PHRASES = (
     ("pila",),
     ("tag", "pila"),
 )
+PAYMENT_INTENT_WORDS = {
+    "gcash",
+    "paymaya",
+    "maya",
+    "cash",
+    "cod",
+    "paypal",
+    "card",
+    "credit",
+    "debit",
+    "online",
+    "bank",
+    "bayad",
+}
+PAYMENT_ACCEPT_WORDS = {
+    "pwede",
+    "can",
+    "may",
+    "accept",
+    "available",
+    "possible",
+    "ask",
+}
+PAYMENT_INTENT_PHRASES = (
+    ("cash", "on", "delivery"),
+    ("gcash", "pwede"),
+    ("paymaya", "pwede"),
+    ("maya", "pwede"),
+)
+ADDRESS_INTENT_WORDS = {
+    "deliver",
+    "i-deliver",
+    "ihatud",
+    "hatud",
+    "ihatud",
+}
+ADDRESS_HINT_WORDS = {
+    "brgy",
+    "barangay",
+    "poblacion",
+    "balay",
+    "house",
+    "home",
+    "location",
+    "diri",
+    "dinhi",
+    "direksyon",
+}
+ADDRESS_INTENT_PHRASES = (
+    ("deliver", "sa"),
+    ("deliver", "to"),
+    ("i-deliver", "sa"),
+    ("i-deliver", "to"),
+    ("deliver", "here"),
+    ("ihatud", "sa"),
+    ("ihatud", "dinhi"),
+)
 KNOWN_PRODUCT_WORDS = {
     "apple",
     "c2",
@@ -165,6 +222,8 @@ NON_ENTITY_WORDS = {
     "total",
 }
 LOW_CONFIDENCE_THRESHOLD = 0.25
+# When the model confidence is below this threshold, return a fallback intent
+# so the app can ask the user to clarify rather than incorrectly act.
 OUT_OF_SCOPE_WORDS = {
     "ai",
     "boyfriend",
@@ -274,6 +333,22 @@ def apply_intent_overrides(text, intent):
             "model_label": intent["label"],
         }
 
+    if is_provide_address_request(words, word_set):
+        return {
+            "label": "provide_address",
+            "score": intent["score"],
+            "source": "rule",
+            "model_label": intent["label"],
+        }
+
+    if is_payment_method_question(words, word_set):
+        return {
+            "label": "payment_method",
+            "score": intent["score"],
+            "source": "rule",
+            "model_label": intent["label"],
+        }
+
     if is_price_question(words, word_set):
         return {
             "label": "ask_price",
@@ -293,6 +368,14 @@ def apply_intent_overrides(text, intent):
     if is_availability_question(words, word_set):
         return {
             "label": "check_availability",
+            "score": intent["score"],
+            "source": "rule",
+            "model_label": intent["label"],
+        }
+
+    if "cancel" in word_set and "order" in word_set:
+        return {
+            "label": "cancel_order",
             "score": intent["score"],
             "source": "rule",
             "model_label": intent["label"],
@@ -335,7 +418,7 @@ def apply_intent_overrides(text, intent):
 
     if intent["score"] < LOW_CONFIDENCE_THRESHOLD:
         return {
-            "label": "out_of_scope",
+            "label": "fallback",
             "score": intent["score"],
             "source": "low_confidence",
             "model_label": intent["label"],
@@ -408,6 +491,35 @@ def is_price_question(words, word_set):
         for index in range(len(words) - phrase_length + 1):
             if tuple(words[index : index + phrase_length]) == phrase:
                 return True
+
+    return False
+
+
+def is_payment_method_question(words, word_set):
+    if not (word_set & PAYMENT_INTENT_WORDS):
+        return False
+
+    if word_set & PAYMENT_ACCEPT_WORDS:
+        return True
+
+    for phrase in PAYMENT_INTENT_PHRASES:
+        phrase_length = len(phrase)
+        for index in range(len(words) - phrase_length + 1):
+            if tuple(words[index : index + phrase_length]) == phrase:
+                return True
+
+    return bool(word_set & PAYMENT_INTENT_WORDS) and not bool(word_set & PRICE_INTENT_WORDS)
+
+
+def is_provide_address_request(words, word_set):
+    if not (word_set & ADDRESS_INTENT_WORDS):
+        return False
+
+    if word_set & ADDRESS_HINT_WORDS:
+        return True
+
+    if "deliver" in word_set or "i-deliver" in word_set or "ihatud" in word_set or "hatud" in word_set or "ihatud" in word_set:
+        return not bool(word_set & KNOWN_PRODUCT_WORDS)
 
     return False
 
@@ -672,6 +784,13 @@ def clean_contextual_entities(text, intent, entities):
             )
         ]
 
+    if intent["label"] == "provide_address":
+        return [
+            entity
+            for entity in entities
+            if entity["type"] not in {"product", "action"}
+        ]
+
     return entities
 
 
@@ -779,7 +898,7 @@ def build_addition(intent, entities):
 
 
 def should_return_entities(intent):
-    return intent["label"] != "out_of_scope"
+    return intent["label"] not in {"out_of_scope", "fallback"}
 
 
 @app.post("/predict")
@@ -800,6 +919,12 @@ def predict(body: RequestBody):
         "entities": entities,
         "slots": group_slots(entities),
     }
+
+    if intent["label"] == "fallback":
+        response["clarification"] = "I didn’t catch that—can you please rephrase?"
+
+    if secondary_intents:
+        response["secondary_intents"] = secondary_intents
 
     if secondary_intents:
         response["secondary_intents"] = secondary_intents
