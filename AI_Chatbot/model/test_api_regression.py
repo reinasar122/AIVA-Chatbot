@@ -33,6 +33,26 @@ cases = [
         "expected_intent": "provide_address",
         "description": "known address phrase should map to provide_address",
     },
+    {
+        "text": "what drinks do you have",
+        "expected_intent": "business_info",
+        "description": "catalog question should map to business_info",
+    },
+    {
+        "text": "naa moy Coke",
+        "expected_intent": "check_availability",
+        "description": "Bisaya availability phrase should map to check_availability",
+    },
+    {
+        "text": "tagpila ang Sprite",
+        "expected_intent": "ask_price",
+        "description": "Bisaya price phrase should map to ask_price",
+    },
+    {
+        "text": "add two more Coke to my order",
+        "expected_intent": "add_quantity",
+        "description": "add phrase should map to add_quantity",
+    },
 ]
 
 client = TestClient(app)
@@ -62,6 +82,16 @@ def run():
             print(f"  details:  {case['description']}")
             print(f"  response: {payload}\n")
 
+    get_response = client.get("/predict", params={"text": "maya pwede?"})
+    if get_response.status_code == 200:
+        print("PASS: GET /predict with text query")
+        passed += 1
+    else:
+        print("FAIL: GET /predict with text query")
+        print(f"  error: HTTP {get_response.status_code}")
+        print(f"  response: {get_response.text}")
+
+    total += 1
     print(f"Summary: {passed}/{total} correct")
     return passed == total
 

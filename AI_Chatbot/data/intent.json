@@ -104,7 +104,7 @@
     "intent": "order_item"
   },
   {
-    "text": "I’ll take Coke",
+    "text": "Iâ€™ll take Coke",
     "intent": "order_item"
   },
   {
@@ -156,7 +156,7 @@
     "intent": "order_item"
   },
   {
-    "text": "I’ll order 1 Coke and 1 Royal",
+    "text": "Iâ€™ll order 1 Coke and 1 Royal",
     "intent": "order_item"
   },
   {
@@ -416,55 +416,7 @@
     "intent": "out_of_scope"
   },
   {
-    "text": "What is the weather today?",
-    "intent": "out_of_scope"
-  },
-  {
     "text": "Tell me a story",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "Who won the World Cup?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "How do I make a cake?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "Do you know Python programming?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "What is the best movie?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "How many stars are there?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "What is the capital of France?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "Who invented the internet?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "Can you recommend a song?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "What is the weather today?",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "Tell me a story",
-    "intent": "out_of_scope"
-  },
-  {
-    "text": "Who won the World Cup?",
     "intent": "out_of_scope"
   },
   {
@@ -512,16 +464,16 @@
     "intent": "business_info"
   },
   {
-    "text": "Is Coke available?",
+    "text": "What drinks do you have?",
     "intent": "business_info"
   },
   {
     "text": "May tubig ba kayo?",
-    "intent": "business_info"
+    "intent": "check_availability"
   },
   {
     "text": "May Coke ba kayo?",
-    "intent": "business_info"
+    "intent": "check_availability"
   },
   {
     "text": "Ano ang mga tinda ninyo?",
@@ -529,7 +481,7 @@
   },
   {
     "text": "May snacks ba kayo?",
-    "intent": "business_info"
+    "intent": "check_availability"
   },
   {
     "text": "Available ba ang Royal?",
@@ -537,11 +489,11 @@
   },
   {
     "text": "Naa moy tubig?",
-    "intent": "business_info"
+    "intent": "check_availability"
   },
   {
     "text": "Naa moy Coke?",
-    "intent": "business_info"
+    "intent": "check_availability"
   },
   {
     "text": "Unsay available ninyo?",
@@ -549,7 +501,7 @@
   },
   {
     "text": "Naa moy snacks?",
-    "intent": "business_info"
+    "intent": "check_availability"
   },
   {
     "text": "Available ba ang gatas?",
@@ -644,19 +596,7 @@
     "intent": "business_info"
   },
   {
-    "text": "What hours are you open today?",
-    "intent": "business_info"
-  },
-  {
     "text": "Do you accept bulk orders?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Can I order from outside Cebu?",
-    "intent": "business_info"
-  },
-  {
-    "text": "What is your delivery area?",
     "intent": "business_info"
   },
   {
@@ -708,92 +648,8 @@
     "intent": "add_quantity"
   },
   {
-    "text": "Add one more Coke",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Please add two more drinks",
-    "intent": "add_quantity"
-  },
-  {
     "text": "Do you sell cold drinks?",
     "intent": "business_info"
-  },
-  {
-    "text": "Are there discounts available?",
-    "intent": "business_info"
-  },
-  {
-    "text": "What hours are you open today?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Do you accept bulk orders?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Can I order from outside Cebu?",
-    "intent": "business_info"
-  },
-  {
-    "text": "What is your delivery area?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Do you have any promos right now?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Is there a minimum purchase amount?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Where is your store located?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Do you deliver to nearby towns?",
-    "intent": "business_info"
-  },
-  {
-    "text": "I need five total now",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Make it four bottles instead",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Add extra two Royals",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Add another Coke please",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Add more to the existing order",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Change quantity to four bottles",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Add 4 more bottles to my order",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Increase my order by three",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Add one more Coke",
-    "intent": "add_quantity"
-  },
-  {
-    "text": "Please add two more drinks",
-    "intent": "add_quantity"
   },
   {
     "text": "I need five total now",
@@ -829,10 +685,6 @@
   },
   {
     "text": "How to order from you?",
-    "intent": "business_info"
-  },
-  {
-    "text": "Do you accept bulk orders?",
     "intent": "business_info"
   },
   {
@@ -1280,74 +1132,6 @@
     "intent": "provide_address"
   },
   {
-    "text": "Send it to 10 Cebu City",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Deliver to my house in Talamban",
-    "intent": "provide_address"
-  },
-  {
-    "text": "This is my delivery location",
-    "intent": "provide_address"
-  },
-  {
-    "text": "I am at Banilad, deliver there",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Send it to Brgy. 18",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Address: 10th floor, Cebu Tower",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Deliver to my home near the mall",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Deliver to 123 Mabini Street",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Ship to my office in Ayala",
-    "intent": "provide_address"
-  },
-  {
-    "text": "I live at 45 Lopez St",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Send it to 10 Cebu City",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Deliver to my house in Talamban",
-    "intent": "provide_address"
-  },
-  {
-    "text": "This is my delivery location",
-    "intent": "provide_address"
-  },
-  {
-    "text": "I am at Banilad, deliver there",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Send it to Brgy. 18",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Address: 10th floor, Cebu Tower",
-    "intent": "provide_address"
-  },
-  {
-    "text": "Deliver to my home near the mall",
-    "intent": "provide_address"
-  },
-  {
     "text": "Here is my number 09123456789",
     "intent": "provide_contact"
   },
@@ -1540,46 +1324,6 @@
     "intent": "provide_contact"
   },
   {
-    "text": "My mobile is 09481234567",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "Call me at 09581234567",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "I can be reached at 09681234567",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "Text me on 09781234567",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "Use 09181234567 to contact me",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "My phone number is 09381234567",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "Send message to 09281234567",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "Here is my contact number",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "Contact me at 09981234567",
-    "intent": "provide_contact"
-  },
-  {
-    "text": "Reach me at 09881234567",
-    "intent": "provide_contact"
-  },
-  {
     "text": "How long is the delivery?",
     "intent": "delivery_time"
   },
@@ -1692,6 +1436,86 @@
     "intent": "delivery_time"
   },
   {
+    "text": "How long before delivery arrives?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How soon will the delivery get here?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "What is the usual delivery duration?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How fast can you send it?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How many hours for delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How long does shipping take?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Delivery time to Talamban?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "How soon can it arrive in Cebu?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Pila ka oras pa before maabot?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Pila ka dugay ang pag deliver?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Mga pila ka minuto mo deliver?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Kanus-a maabot ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Dugay ba inyong pag deliver?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Paspas ra ba ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Unsa kadugay before maabot?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Gaano katagal bago dumating ang delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Ilang oras bago makarating?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Mabilis ba ang delivery ninyo?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Mga ilang minuto ang hintay sa delivery?",
+    "intent": "delivery_time"
+  },
+  {
+    "text": "Gaano kabilis ma-deliver ang order?",
+    "intent": "delivery_time"
+  },
+  {
     "text": "Okay",
     "intent": "confirmation"
   },
@@ -1724,7 +1548,7 @@
     "intent": "confirmation"
   },
   {
-    "text": "That’s fine",
+    "text": "Thatâ€™s fine",
     "intent": "confirmation"
   },
   {
@@ -1765,14 +1589,6 @@
   },
   {
     "text": "Okay na yan",
-    "intent": "confirmation"
-  },
-  {
-    "text": "Sige go",
-    "intent": "confirmation"
-  },
-  {
-    "text": "Oo",
     "intent": "confirmation"
   },
   {
@@ -1848,7 +1664,7 @@
     "intent": "rejection"
   },
   {
-    "text": "I don’t want it",
+    "text": "I donâ€™t want it",
     "intent": "rejection"
   },
   {
@@ -1893,10 +1709,6 @@
   },
   {
     "text": "Pass ako",
-    "intent": "rejection"
-  },
-  {
-    "text": "Ayaw nalang",
     "intent": "rejection"
   },
   {
@@ -1985,50 +1797,6 @@
   },
   {
     "text": "How much is two bottles of Sprite?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "What does two Royal cost?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "How much if I buy five Coke?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "How much does delivery cost?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "How much is a case of Coke?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "Magkano sa dalawang Coke?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "Pila ang single bottle price?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "Tagpila ang tulo ka Coke?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "How much ang total bill?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "How much for one case of Pepsi?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "How much is two bottles of Sprite?",
-    "intent": "ask_price"
-  },
-  {
-    "text": "What does two Royal cost?",
     "intent": "ask_price"
   },
   {
@@ -2121,6 +1889,26 @@
   },
   {
     "text": "How much ang Coke?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila ang Sprite?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Pila ang presyo sa Sprite?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Unsay presyo sa Sprite?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Magkano ang Sprite?",
+    "intent": "ask_price"
+  },
+  {
+    "text": "Tagpila ang usa ka Sprite?",
     "intent": "ask_price"
   },
   {
@@ -2272,10 +2060,6 @@
     "intent": "greeting"
   },
   {
-    "text": "Kumusta",
-    "intent": "greeting"
-  },
-  {
     "text": "Kamusta boss",
     "intent": "greeting"
   },
@@ -2292,19 +2076,7 @@
     "intent": "greeting"
   },
   {
-    "text": "Hi boss",
-    "intent": "greeting"
-  },
-  {
-    "text": "Hello boss",
-    "intent": "greeting"
-  },
-  {
     "text": "Maayong adlaw boss",
-    "intent": "greeting"
-  },
-  {
-    "text": "Kamusta boss",
     "intent": "greeting"
   },
   {
@@ -2480,98 +2252,6 @@
     "intent": "payment_method"
   },
   {
-    "text": "Do you accept debit cards?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Is PayPal allowed?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Can I pay cash on delivery?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Do you take GCash and PayMaya?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Is Coke in stock right now?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Do you have Sprite available?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Any Royal bottles left?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Can I still get Pepsi?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Is water still available?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Do you have milk today?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Is Coke Zero available?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Are there drinks left?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Do you have stock of drinks?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Is the item available now?",
-    "intent": "check_availability"
-  },
-  {
-    "text": "Can I use a mobile wallet?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Do you accept online bank payment?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Is card payment possible?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Can I pay with cash?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Which payment options do you have?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Can I pay by credit card?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Do you accept debit cards?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Is PayPal allowed?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Can I pay cash on delivery?",
-    "intent": "payment_method"
-  },
-  {
     "text": "Do you take GCash and PayMaya?",
     "intent": "payment_method"
   },
@@ -2649,10 +2329,6 @@
   },
   {
     "text": "Ano mga pwedeng bayad?",
-    "intent": "payment_method"
-  },
-  {
-    "text": "Pwede GCash?",
     "intent": "payment_method"
   },
   {
@@ -2828,7 +2504,7 @@
     "intent": "cancel_order"
   },
   {
-    "text": "Don’t send my order",
+    "text": "Donâ€™t send my order",
     "intent": "cancel_order"
   },
   {
@@ -2936,11 +2612,7 @@
     "intent": "cancel_order"
   },
   {
-    "text": "Wag na ipadala ang order ko",
-    "intent": "cancel_order"
-  },
-  {
-    "text": "I don’t want the order anymore",
+    "text": "I donâ€™t want the order anymore",
     "intent": "cancel_order"
   },
   {
@@ -3064,7 +2736,7 @@
     "intent": "help"
   },
   {
-    "text": "I don’t know how to order",
+    "text": "I donâ€™t know how to order",
     "intent": "help"
   },
   {
@@ -3304,46 +2976,6 @@
     "intent": "order_status"
   },
   {
-    "text": "Is my order on its way?",
-    "intent": "order_status"
-  },
-  {
-    "text": "Where is my package now?",
-    "intent": "order_status"
-  },
-  {
-    "text": "Has my order been shipped?",
-    "intent": "order_status"
-  },
-  {
-    "text": "Check the status of my order",
-    "intent": "order_status"
-  },
-  {
-    "text": "Is my order already out for delivery?",
-    "intent": "order_status"
-  },
-  {
-    "text": "When will my order be here?",
-    "intent": "order_status"
-  },
-  {
-    "text": "Any update on my order?",
-    "intent": "order_status"
-  },
-  {
-    "text": "Has delivery started?",
-    "intent": "order_status"
-  },
-  {
-    "text": "Track my order please",
-    "intent": "order_status"
-  },
-  {
-    "text": "Where is the order now?",
-    "intent": "order_status"
-  },
-  {
     "text": "Order status please",
     "intent": "order_status"
   },
@@ -3356,7 +2988,7 @@
     "intent": "order_status"
   },
   {
-    "text": "When will my order arrive?",
+    "text": "What is the current status of my order?",
     "intent": "order_status"
   },
   {
@@ -3396,7 +3028,7 @@
     "intent": "order_status"
   },
   {
-    "text": "Kailan darating ang order ko?",
+    "text": "Unsa ang status sa akong order?",
     "intent": "order_status"
   },
   {
@@ -3421,10 +3053,6 @@
   },
   {
     "text": "Is my order ready?",
-    "intent": "order_status"
-  },
-  {
-    "text": "Is my order already shipped?",
     "intent": "order_status"
   },
   {
@@ -3820,7 +3448,7 @@
     "intent": "thanks"
   },
   {
-    "text": "That’s all thank you",
+    "text": "Thatâ€™s all thank you",
     "intent": "thanks"
   },
   {

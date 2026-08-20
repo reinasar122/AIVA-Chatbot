@@ -2,8 +2,9 @@ from functools import lru_cache
 from pathlib import Path
 import re
 
-from fastapi import FastAPI
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import FileResponse
+from pydantic import BaseModel, Field
 import torch
 from transformers import AutoModelForTokenClassification, AutoTokenizer, pipeline
 
@@ -250,7 +251,7 @@ OUT_OF_SCOPE_WORDS = {
 
 
 class RequestBody(BaseModel):
-    text: str
+    text: str = Field(..., min_length=1, max_length=500)
 
 
 @lru_cache(maxsize=1)
@@ -428,7 +429,6 @@ def apply_intent_overrides(text, intent):
 
 
 def is_business_info_question(words, word_set):
-    has_product = bool(word_set & KNOWN_PRODUCT_WORDS)
     has_business_word = bool(word_set & BUSINESS_INFO_INTENT_WORDS)
     has_business_phrase = False
 
@@ -441,7 +441,13 @@ def is_business_info_question(words, word_set):
         if has_business_phrase:
             break
 
-    return has_product and (has_business_word or has_business_phrase)
+    has_catalog_question = (
+        "what" in word_set
+        and bool(word_set & {"drinks", "products"})
+        and ("have" in word_set or "sell" in word_set)
+    )
+
+    return has_business_word or has_business_phrase or has_catalog_question
 
 
 def is_business_hours_question(word_set):
@@ -897,27 +903,116 @@ def build_addition(intent, entities):
     return addition
 
 
+def build_answer(text, intent, entities):
+    label = intent["label"]
+    words = [word.lower() for word in re.findall(r"[A-Za-z-]+", text)]
+    products = [entity["text"] for entity in entities if entity["type"] == "product"]
+    quantities = [entity["text"] for entity in entities if entity["type"] == "quantity"]
+    locations = [entity["text"] for entity in entities if entity["type"] == "location"]
+
+    if label == "greeting":
+        return "Hello! I can help with products, orders, delivery, and payment."
+    if label == "help":
+        return "You can ask about products, prices, availability, orders, delivery, addresses, or payment."
+    if label == "thanks":
+        return "You are welcome!"
+    if label == "order_item":
+        if products and quantities:
+            return f"You want to order {quantities[0]} {products[0]}. Please confirm before I place it."
+        if products:
+            return f"You want to order {', '.join(products)}. What quantity would you like?"
+        return "What product and quantity would you like to order?"
+    if label == "add_quantity":
+        if products and quantities:
+            return f"You want to add {quantities[-1]} more {products[0]}. Please confirm before I update the order."
+        return "What product and quantity would you like to add?"
+    if label == "ask_price":
+        product_text = ", ".join(products) if products else "that product"
+        return f"I do not have a price listed for {product_text} yet."
+    if label == "check_availability":
+        product_text = ", ".join(products) if products else "that product"
+        return f"I cannot confirm whether {product_text} is in stock because live inventory is not connected yet."
+    if label == "business_info":
+        if is_delivery_area_question(words):
+            return "I can help with delivery to your area, but the delivery-area list is not connected yet."
+        return "We sell drinks and accept orders for delivery. Ask me about a specific product or service."
+    if label == "payment_method":
+        return "We can accept cash, GCash, Maya, card, or cash on delivery."
+    if label == "delivery_time":
+        return "Delivery time depends on your location. Please provide your area so I can check it."
+    if label == "provide_address":
+        location_text = ", ".join(locations)
+        return f"I noted your delivery location: {location_text}." if location_text else "Please provide your complete delivery address."
+    if label == "provide_contact":
+        return "I noted your contact details."
+    if label == "order_status":
+        return "I cannot check order status yet because order tracking is not connected."
+    if label == "cancel_order":
+        return "I can help cancel your order. Please provide your order number."
+    if label == "modify_order":
+        return "I can help change your order. Please tell me the product you want to replace."
+    if label == "confirmation":
+        return "Thanks for confirming."
+    if label == "rejection":
+        return "Understood. I will not make that change."
+    if label == "complaint":
+        return "I am sorry about that. Please describe the problem so I can help."
+    if label == "out_of_scope":
+        return "I can help with products, orders, delivery, addresses, and payment questions."
+    return "I did not fully understand that. Please rephrase your question."
+
+
 def should_return_entities(intent):
     return intent["label"] not in {"out_of_scope", "fallback"}
 
 
-@app.post("/predict")
-def predict(body: RequestBody):
-    intent_prediction = get_intent_classifier()(body.text)
-    intent = apply_intent_overrides(body.text, format_intent(intent_prediction))
-    entities = predict_entities(body.text) if should_return_entities(intent) else []
-    entities = add_destination_entity(body.text, intent, entities)
-    entities = add_delivery_area_entity(body.text, intent, entities)
-    entities = clean_contextual_entities(body.text, intent, entities)
-    secondary_intents = build_secondary_intents(body.text, intent)
+@app.get("/", include_in_schema=False)
+def chat_interface():
+    return FileResponse(BASE_DIR / "web" / "index.html")
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "ok",
+        "intent_model_ready": INTENT_MODEL_DIR.is_dir(),
+        "ner_model_ready": NER_MODEL_DIR.is_dir(),
+    }
+
+
+@app.api_route("/predict", methods=["GET", "POST"])
+def predict(
+    text: str | None = Query(default=None, description="Text to classify"),
+    body: RequestBody | None = None,
+):
+    if body is not None:
+        text_value = body.text
+    else:
+        text_value = text
+
+    if text_value is None:
+        raise HTTPException(status_code=400, detail="text must be provided")
+
+    text_value = text_value.strip()
+    if not text_value:
+        raise HTTPException(status_code=400, detail="text must not be blank")
+
+    intent_prediction = get_intent_classifier()(text_value)
+    intent = apply_intent_overrides(text_value, format_intent(intent_prediction))
+    entities = predict_entities(text_value) if should_return_entities(intent) else []
+    entities = add_destination_entity(text_value, intent, entities)
+    entities = add_delivery_area_entity(text_value, intent, entities)
+    entities = clean_contextual_entities(text_value, intent, entities)
+    secondary_intents = build_secondary_intents(text_value, intent)
     modification = build_modification(intent, entities)
     addition = build_addition(intent, entities)
 
     response = {
-        "text": body.text,
+        "text": text_value,
         "intent": intent,
         "entities": entities,
         "slots": group_slots(entities),
+        "answer": build_answer(text_value, intent, entities),
     }
 
     if intent["label"] == "fallback":

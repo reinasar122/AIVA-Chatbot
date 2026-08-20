@@ -1,0 +1,136 @@
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights: 100%|##########| 201/201 [00:00<00:00, 6416.38it/s]
+Regression test phrases:
+
+PASS: cancel my order
+  expected: cancel_order
+  predicted: cancel_order (0.753)
+
+PASS: please stop my order
+  expected: cancel_order
+  predicted: cancel_order (0.758)
+
+PASS: add 2 more Coke
+  expected: add_quantity
+  predicted: add_quantity (0.545)
+
+PASS: please add one more bottle
+  expected: add_quantity
+  predicted: add_quantity (0.565)
+
+PASS: where is my order
+  expected: order_status
+  predicted: order_status (0.719)
+
+PASS: what is the status of my order
+  expected: order_status
+  predicted: order_status (0.807)
+
+PASS: how much is Coke
+  expected: ask_price
+  predicted: ask_price (0.779)
+
+PASS: how much for Sprite
+  expected: ask_price
+  predicted: ask_price (0.657)
+
+PASS: do you have Sprite
+  expected: check_availability
+  predicted: check_availability (0.626)
+
+PASS: is Coke available
+  expected: check_availability
+  predicted: check_availability (0.695)
+
+PASS: do you accept GCash
+  expected: payment_method
+  predicted: payment_method (0.844)
+
+PASS: can I pay with card
+  expected: payment_method
+  predicted: payment_method (0.823)
+
+PASS: maya pwede?
+  expected: payment_method
+  predicted: payment_method (0.413)
+
+PASS: deliver to my house in Talamban
+  expected: provide_address
+  predicted: provide_address (0.887)
+
+PASS: Brgy. Palanas lang ihatud
+  expected: provide_address
+  predicted: provide_address (0.893)
+
+PASS: my phone number is 09381234567
+  expected: provide_contact
+  predicted: provide_contact (0.915)
+
+PASS: what is the weather today
+  expected: out_of_scope
+  predicted: out_of_scope (0.663)
+
+PASS: how long does delivery take
+  expected: delivery_time
+  predicted: delivery_time (0.799)
+
+PASS: pila ka oras ang delivery
+  expected: delivery_time
+  predicted: delivery_time (0.284)
+
+PASS: where is my order now
+  expected: order_status
+  predicted: order_status (0.803)
+
+PASS: has my order been shipped
+  expected: order_status
+  predicted: order_status (0.740)
+
+PASS: what products do you sell
+  expected: business_info
+  predicted: business_info (0.609)
+
+PASS: what drinks do you have
+  expected: business_info
+  predicted: business_info (0.515)
+
+PASS: is Sprite in stock
+  expected: check_availability
+  predicted: check_availability (0.581)
+
+FAIL: naa moy Coke
+  expected: check_availability
+  predicted: order_item (0.549)
+
+PASS: I want to order two Coke
+  expected: order_item
+  predicted: order_item (0.720)
+
+PASS: pa order ug Sprite
+  expected: order_item
+  predicted: order_item (0.711)
+
+PASS: add two more Coke to my order
+  expected: add_quantity
+  predicted: add_quantity (0.477)
+
+PASS: make it three bottles
+  expected: add_quantity
+  predicted: add_quantity (0.486)
+
+PASS: how much is one Coke
+  expected: ask_price
+  predicted: ask_price (0.815)
+
+FAIL: tagpila ang Sprite
+  expected: ask_price
+  predicted: order_item (0.591)
+
+PASS: can I pay with GCash
+  expected: payment_method
+  predicted: payment_method (0.847)
+
+PASS: is cash on delivery accepted
+  expected: payment_method
+  predicted: payment_method (0.822)
+
+Summary: 31/33 correct

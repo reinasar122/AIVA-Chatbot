@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIVA Chat Test Bench</title>
+  <style>
+    :root {
+      --ink: #132b35;
+      --muted: #637880;
+      --paper: #f6f2e9;
+      --panel: #fffdf8;
+      --line: #dce4df;
+      --teal: #117c78;
+      --teal-dark: #0b5c5c;
+      --coral: #ec765e;
+      --soft-teal: #e4f3ee;
+      --soft-coral: #fff0e9;
+      --shadow: 0 22px 55px rgba(18, 50, 58, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    button, textarea { font: inherit; }
+    .shell { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 34px 0 24px; display: flex; justify-content: space-between; align-items: end; gap: 24px; }
+    .eyebrow { margin: 0 0 8px; color: var(--coral); font: 700 12px/1.2 Arial, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(34px, 5vw, 62px); line-height: 0.98; font-weight: 500; letter-spacing: 0; }
+    .lede { max-width: 440px; margin: 0; color: var(--muted); font: 15px/1.55 Arial, sans-serif; }
+    .status { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 99px; background: var(--panel); color: var(--muted); font: 700 12px Arial, sans-serif; white-space: nowrap; }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #d89b32; }
+    .status.ready .status-dot { background: #35a66f; }
+    .status.offline .status-dot { background: var(--coral); }
+    main { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr); gap: 18px; padding-bottom: 34px; }
+    .chat, .inspector { border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); }
+    .chat { min-height: 650px; display: flex; flex-direction: column; }
+    .chat-top { padding: 18px 22px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; }
+    .chat-title { margin: 0; font-size: 20px; font-weight: 500; }
+    .clear { border: 0; background: transparent; color: var(--teal); cursor: pointer; font: 700 12px Arial, sans-serif; }
+    .messages { flex: 1; padding: 24px; overflow-y: auto; min-height: 390px; }
+    .welcome { max-width: 560px; padding: 22px; border-left: 4px solid var(--coral); background: var(--soft-coral); }
+    .welcome h2 { margin: 0 0 8px; font-size: 25px; font-weight: 500; }
+    .welcome p { margin: 0; color: var(--muted); font: 14px/1.55 Arial, sans-serif; }
+    .message { display: flex; margin: 0 0 18px; }
+    .message.user { justify-content: flex-end; }
+    .bubble { max-width: 78%; padding: 13px 16px; font: 15px/1.5 Arial, sans-serif; }
+    .message.ai .bubble { border: 1px solid var(--line); background: white; }
+    .message.user .bubble { background: var(--teal); color: white; }
+    .meta { margin-top: 7px; color: var(--muted); font: 11px Arial, sans-serif; }
+    .composer { padding: 18px 22px 22px; border-top: 1px solid var(--line); }
+    textarea { display: block; width: 100%; min-height: 76px; resize: vertical; padding: 13px 14px; border: 1px solid #b9cbc5; border-radius: 2px; outline: none; color: var(--ink); background: #fff; font: 15px/1.45 Arial, sans-serif; }
+    textarea:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(17, 124, 120, 0.12); }
+    .composer-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 11px; }
+    .hint { color: var(--muted); font: 12px Arial, sans-serif; }
+    .send { border: 0; padding: 12px 20px; background: var(--coral); color: white; cursor: pointer; font: 700 13px Arial, sans-serif; }
+    .send:hover { background: #d85e4c; }
+    .send:disabled { cursor: wait; opacity: 0.6; }
+    .inspector { align-self: start; padding: 22px; }
+    .inspector h2 { margin: 0 0 16px; font-size: 21px; font-weight: 500; }
+    .label { margin: 18px 0 8px; color: var(--muted); font: 700 11px Arial, sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+    .examples { display: grid; gap: 8px; }
+    .example { padding: 11px 12px; border: 1px solid var(--line); background: white; color: var(--ink); cursor: pointer; text-align: left; font: 13px/1.3 Arial, sans-serif; }
+    .example:hover { border-color: var(--teal); color: var(--teal-dark); }
+    .diagnostics { padding: 14px; background: var(--soft-teal); font: 12px/1.6 Arial, sans-serif; }
+    .diagnostics strong { color: var(--teal-dark); }
+    pre { margin: 0; max-height: 230px; overflow: auto; white-space: pre-wrap; word-break: break-word; color: #39525a; font: 12px/1.5 Consolas, monospace; }
+    .empty { color: var(--muted); font: 13px/1.5 Arial, sans-serif; }
+    @media (max-width: 800px) {
+      .shell { width: min(100% - 20px, 620px); }
+      header { display: block; padding-top: 22px; }
+      .lede { margin-top: 14px; }
+      .status { margin-top: 16px; }
+      main { grid-template-columns: 1fr; }
+      .chat { min-height: 580px; }
+      .inspector { order: 2; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">AIVA / test bench</p>
+        <h1>Talk to your AI.</h1>
+      </div>
+      <div>
+        <p class="lede">Ask real questions, inspect what the model understood, and see exactly where its current knowledge stops.</p>
+        <div id="status" class="status"><span class="status-dot"></span><span>Checking API...</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="chat" aria-label="Chat with AIVA">
+        <div class="chat-top">
+          <h2 class="chat-title">Conversation</h2>
+          <button id="clear" class="clear" type="button">Clear chat</button>
+        </div>
+        <div id="messages" class="messages">
+          <div id="welcome" class="welcome">
+            <h2>What can I help you test?</h2>
+            <p>Try a product, order, payment, delivery, or general capability question. Every reply includes the model's intent and confidence.</p>
+          </div>
+        </div>
+        <form id="composer" class="composer">
+          <textarea id="question" maxlength="500" placeholder="Type a question, then press Enter..." aria-label="Your question"></textarea>
+          <div class="composer-row">
+            <span class="hint">Enter to send · Shift + Enter for a new line</span>
+            <button id="send" class="send" type="submit">Send question</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="inspector">
+        <h2>Try these questions</h2>
+        <div class="examples">
+          <button class="example" type="button">Do you accept GCash?</button>
+          <button class="example" type="button">How much is Coke?</button>
+          <button class="example" type="button">Do you have Sprite?</button>
+          <button class="example" type="button">I want to order two Coke</button>
+          <button class="example" type="button">Do you deliver to Talamban?</button>
+          <button class="example" type="button">What is the weather today?</button>
+        </div>
+        <p class="label">Latest model details</p>
+        <div id="details" class="diagnostics"><span class="empty">Send a question to inspect the latest response.</span></div>
+        <p class="label">Raw response</p>
+        <pre id="raw">No response yet.</pre>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    const form = document.getElementById('composer');
+    const question = document.getElementById('question');
+    const send = document.getElementById('send');
+    const messages = document.getElementById('messages');
+    const welcome = document.getElementById('welcome');
+    const details = document.getElementById('details');
+    const raw = document.getElementById('raw');
+    const status = document.getElementById('status');
+
+    function addMessage(kind, text, meta) {
+      const item = document.createElement('div');
+      item.className = `message ${kind}`;
+      const bubble = document.createElement('div');
+      bubble.className = 'bubble';
+      bubble.textContent = text;
+      item.appendChild(bubble);
+      if (meta) {
+        const note = document.createElement('div');
+        note.className = 'meta';
+        note.textContent = meta;
+        bubble.appendChild(note);
+      }
+      messages.appendChild(item);
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    function showDetails(data) {
+      const intent = data.intent || {};
+      const entityCount = Array.isArray(data.entities) ? data.entities.length : 0;
+      const confidence = typeof intent.score === 'number' ? `${(intent.score * 100).toFixed(1)}%` : 'n/a';
+      details.innerHTML = `<strong>Intent:</strong> ${intent.label || 'unknown'}<br><strong>Confidence:</strong> ${confidence}<br><strong>Entities found:</strong> ${entityCount}`;
+      raw.textContent = JSON.stringify(data, null, 2);
+    }
+
+    async function checkHealth() {
+      try {
+        const response = await fetch('/health');
+        const data = await response.json();
+        status.className = 'status ready';
+        status.innerHTML = `<span class="status-dot"></span><span>API ready · models ${data.intent_model_ready && data.ner_model_ready ? 'ready' : 'incomplete'}</span>`;
+      } catch (error) {
+        status.className = 'status offline';
+        status.innerHTML = '<span class="status-dot"></span><span>API offline</span>';
+      }
+    }
+
+    async function ask(text) {
+      const cleanText = text.trim();
+      if (!cleanText || send.disabled) return;
+      welcome.hidden = true;
+      addMessage('user', cleanText);
+      question.value = '';
+      send.disabled = true;
+      send.textContent = 'Thinking...';
+      try {
+        const response = await fetch('/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: cleanText })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.detail || 'The API returned an error.');
+        addMessage('ai', data.answer || 'The model returned no answer.', `Intent: ${data.intent?.label || 'unknown'} · Confidence: ${data.intent?.score ? `${(data.intent.score * 100).toFixed(1)}%` : 'n/a'}`);
+        showDetails(data);
+      } catch (error) {
+        addMessage('ai', `I could not reach the API: ${error.message}`);
+      } finally {
+        send.disabled = false;
+        send.textContent = 'Send question';
+      }
+    }
+
+    form.addEventListener('submit', (event) => { event.preventDefault(); ask(question.value); });
+    question.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); form.requestSubmit(); }
+    });
+    document.querySelectorAll('.example').forEach((button) => button.addEventListener('click', () => ask(button.textContent)));
+    document.getElementById('clear').addEventListener('click', () => {
+      messages.innerHTML = '';
+      messages.appendChild(welcome);
+      welcome.hidden = false;
+      details.innerHTML = '<span class="empty">Send a question to inspect the latest response.</span>';
+      raw.textContent = 'No response yet.';
+    });
+    checkHealth();
+  </script>
+</body>
+</html>

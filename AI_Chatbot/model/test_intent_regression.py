@@ -24,6 +24,22 @@ phrases = [
     {"text": "Brgy. Palanas lang ihatud", "expected": "provide_address"},
     {"text": "my phone number is 09381234567", "expected": "provide_contact"},
     {"text": "what is the weather today", "expected": "out_of_scope"},
+    {"text": "how long does delivery take", "expected": "delivery_time"},
+    {"text": "pila ka oras ang delivery", "expected": "delivery_time"},
+    {"text": "where is my order now", "expected": "order_status"},
+    {"text": "has my order been shipped", "expected": "order_status"},
+    {"text": "what products do you sell", "expected": "business_info"},
+    {"text": "what drinks do you have", "expected": "business_info"},
+    {"text": "is Sprite in stock", "expected": "check_availability"},
+    {"text": "naa moy Coke", "expected": "check_availability"},
+    {"text": "I want to order two Coke", "expected": "order_item"},
+    {"text": "pa order ug Sprite", "expected": "order_item"},
+    {"text": "add two more Coke to my order", "expected": "add_quantity"},
+    {"text": "make it three bottles", "expected": "add_quantity"},
+    {"text": "how much is one Coke", "expected": "ask_price"},
+    {"text": "tagpila ang Sprite", "expected": "ask_price"},
+    {"text": "can I pay with GCash", "expected": "payment_method"},
+    {"text": "is cash on delivery accepted", "expected": "payment_method"},
 ]
 
 
